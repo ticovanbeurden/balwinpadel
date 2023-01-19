@@ -76,7 +76,12 @@
   <div class="page-content page-content--product">
     <div class="page-width">
 
-      <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
+      <div class="grid{% unless image_position == 'left' %} relative grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
+        {%- if settings.show_breadcrumbs and isModal != true -%}
+          <div class='product-block--header--mobile'>
+            {%- render 'breadcrumbs' -%}
+          </div>
+        {%- endif -%}
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__default product-single__sticky">
             {%- if on_sale and product.available -%}
@@ -106,7 +111,9 @@
           <div class="product-single__meta">
             <div class="product-block product-block--header">
               {%- if settings.show_breadcrumbs and isModal != true -%}
-                {%- render 'breadcrumbs' -%}
+                <div class='product-block--header--desktop'>
+                  {%- render 'breadcrumbs' -%}
+                </div>
               {%- endif -%}
 
               {%- if settings.vendor_enable -%}

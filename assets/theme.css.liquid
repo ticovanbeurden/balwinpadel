@@ -7546,6 +7546,24 @@ input[type=image]{
 .product-block--sales-point+.product-block--sales-point{
   margin-top:-20px;
 }
+.product-block--header--desktop {
+  display: none;
+}
+
+.product-block--header--mobile {
+  padding-left: 17px;
+  display: flex;
+}
+
+@media only screen and (min-width:769px){
+  .product-block--header--mobile {
+    display: none;
+  }
+
+  .product-block--header--desktop {
+    display: block;   
+  }
+}
 
 .product-block--header+.product-block--price{
   margin-top:-20px;
