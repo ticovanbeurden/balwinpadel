@@ -24,6 +24,12 @@
   endcase
 
   assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+
+  assign on_sale = false
+  if product.compare_at_price > product.price
+    assign on_sale = true
+  endif
+
 -%}
 
 {%- liquid
@@ -72,7 +78,12 @@
 
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
-          <div class="grid__item {{ product_image_width }} product-single__sticky">
+          <div class="grid__item {{ product_image_width }} product-single__default product-single__sticky">
+            {%- if on_sale and product.available -%}
+              <div class="grid-product__tag grid-product__tag--sale">
+                {{ 'products.general.sale' | t }}
+              </div>
+            {%- endif -%}
             {%- render 'product-images',
               section_id: section_id,
               product: product,
