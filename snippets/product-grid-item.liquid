@@ -163,7 +163,13 @@ Arguments
       </div>
 
       <div class="grid-product__meta">
-        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
+        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">
+          {%- if product.title contains 'padel racket' -%}
+            {{- product.title | replace: 'padel racket', "<span class='grid-product__title--heading'>padel racket</span>" -}}
+          {%- else -%}
+            {{- product.title -}}
+          {%- endif -%}
+        </div>
         {%- if settings.vendor_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}
