@@ -1,0 +1,264 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "100% laagste prijs garantie"
+          }
+        },
+        "88255b20-f1bb-4380-916a-5cf67b285057": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "heart",
+            "text": "Retourneren binnen 14 dagen"
+          }
+        },
+        "1f15a253-6e72-4c5f-b4f6-8342bccf3199": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "Vanaf €75 - gratis verzending"
+          }
+        },
+        "6373a12d-c3ba-493f-9427-7333c08d4d92": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Vòòr 16:00 besteld, morgen in huis"
+          }
+        },
+        "4eaa43b4-67bf-4a8e-bd2b-a8da5910594b": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "gift",
+            "text": "Gratis PadelCasa tas bij elk racket👜"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Hoe Padelcasa haar rackets beoordeeld:",
+            "content": "<p>PadelCasa heeft een racket test centrum in Amsterdam. De cijfers worden gebaseerd op de expertise en meningen van padel trainers, waaronder Sandy Farquharson van The Padel School.<\/p><p>WAT BETEKENEN DE VERSCHILLENDE CIJFERS?<\/p><p><br\/><strong>KRACHT:<\/strong><\/p><p>Hoe hoger dit cijfer is, hoe meer kracht het racket genereert.<\/p><p><strong>CONTROLE:<\/strong><\/p><p>Hoe hoger dit cijfer, des te meer controle je ervaart.<\/p><p><strong>HANDELBAARHEID:<\/strong><\/p><p>Hoe hoger dit cijfer des te makkelijker het is om het racket te handelen<\/p><p><strong>SWEETSPOT:<\/strong><\/p><p>Hoe hoger het cijfer is, hoe groter de sweetspot is. Dit betekent dat je de bal sneller goed raakt.<\/p>",
+            "page": ""
+          }
+        },
+        "15da42b6-2e10-409f-96b8-7fba3ccac472": {
+          "type": "tab",
+          "settings": {
+            "title": "Waarom PadelCasa?",
+            "content": "<p>- Padel Rackets testen mogelijk <br\/>- Winkel in Amsterdam<br\/>- Partnership met B. Amsterdam padel <br\/>- Meer dan 5 jaar ervaring<br\/>- Klant is 👑<\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "separator",
+        "variant_picker",
+        "sales_point",
+        "88255b20-f1bb-4380-916a-5cf67b285057",
+        "1f15a253-6e72-4c5f-b4f6-8342bccf3199",
+        "6373a12d-c3ba-493f-9427-7333c08d4d92",
+        "4eaa43b4-67bf-4a8e-bd2b-a8da5910594b",
+        "inventory_status",
+        "buy_buttons",
+        "description",
+        "tab",
+        "15da42b6-2e10-409f-96b8-7fba3ccac472",
+        "share"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "About your brand",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "About your brand",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "text-and-image2": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "About your brand",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "text-and-image",
+    "text-and-image2",
+    "testimonials",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
+}

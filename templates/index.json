@@ -1,0 +1,342 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Dat is pas winnen.",
+            "title_size": 80,
+            "subheading": "Padelcasa - de padel specialist.",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Shop nu",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "of wordt geholpen met je keuze",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Untitled_design_7.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "20% 0"
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Padelcasa",
+            "title": "De padel specialist",
+            "title_size": 60,
+            "subheading": "Dat is pas winnen.",
+            "link": "shopify:\/\/collections\/padel-rackets",
+            "link_text": "Shop nu",
+            "link_2": "shopify:\/\/pages\/padel-racket-kopen-waar-op-letten",
+            "link_text_2": "keuzehulp",
+            "color_accent": "#e58951",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/padelcasa_achtergrond_homepage.png",
+            "image_mobile": "shopify:\/\/shop_images\/padelcasa_achtergrond_homepage.png",
+            "parallax_direction": "left",
+            "overlay_opacity": 0,
+            "focal_point": "20% 0"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "slideshow-1"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 10
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-rackets",
+            "title": "Padel Rackets",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-ballen",
+            "title": "Padel ballen",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-accessoires",
+            "title": "padel accessoires",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-grips",
+            "title": "padel grips",
+            "focal_point": "center center"
+          }
+        },
+        "c2714005-6315-4ffb-8f0d-f1608c82e13f": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-tassen",
+            "title": "padel tassen",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collections-0",
+        "featured-collections-1",
+        "featured-collections-2",
+        "featured-collections-3",
+        "c2714005-6315-4ffb-8f0d-f1608c82e13f"
+      ],
+      "settings": {
+        "title": "CATEGORIEËN",
+        "divider": false,
+        "per_row": 5,
+        "enable_gutter": true
+      }
+    },
+    "8ecdbd4f-af66-43ec-8a3d-f40af89f9aaf": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Racket_testen_PC.jpg",
+        "image2": "shopify:\/\/shop_images\/Over_ons-7.jpg",
+        "image_width": 700,
+        "subtitle": "padel racket testen",
+        "title": "kom jij een racket testen?",
+        "text": "<p>Wil jij een racket kopen maar toch eerst even voelen welk racket het beste bij jou past? Bij ons kan je <strong>vrijblijvend een racket testen<\/strong> op locatie, maak nu een afspraak!<\/p>",
+        "button_label": "maak een afspraak",
+        "button_link": "https:\/\/www.padelcasa.com\/pages\/padel-racket-testen-amsterdam",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "promo-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify:\/\/collections\/all",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 800,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": true
+          }
+        },
+        "promo-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify:\/\/collections\/all",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-bottom horizontal-center",
+            "focal_point": "80% 50%",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": true,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "promo-0",
+        "promo-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "promo-grid2": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "promo2-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify:\/\/collections\/all",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "100",
+            "height": 720,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "80% 50%",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "promo2-1": {
+          "type": "sale_collection",
+          "settings": {
+            "sale_collection": "",
+            "top_text": "Up to",
+            "middle_text": "50% off",
+            "bottom_text": "Select products",
+            "width": "50",
+            "color_tint": "#000000",
+            "color_tint_opacity": 0,
+            "boxed": false,
+            "framed": true
+          }
+        },
+        "promo2-2": {
+          "type": "sale_collection",
+          "settings": {
+            "sale_collection": "",
+            "top_text": "Up to",
+            "middle_text": "50% off",
+            "bottom_text": "Select products",
+            "width": "50",
+            "color_tint": "#000000",
+            "color_tint_opacity": 0,
+            "boxed": false,
+            "framed": true
+          }
+        }
+      },
+      "block_order": [
+        "promo2-0",
+        "promo2-1",
+        "promo2-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "1673356688e41e1775": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "1b4ff4f3-bf0d-49fd-930d-cb1702a5468e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Ale_galan_homepage.jpg",
+        "image_width": 700,
+        "subtitle": "Nieuw",
+        "title": "Adidas RACKETS & TASSEN",
+        "text": "<p>De 2023 collectie van Adidas is erg breed, waardoor er voor iedere speler een perfect racket tussen zit. Of je nu op zoek bent naar power, comfort, controle of een balans tussen allen.<\/p>",
+        "button_label": "bekijk de collectie",
+        "button_link": "https:\/\/www.padelcasa.com\/collections\/adidas-padel-racket-kopen",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "0219e51a-bc74-4113-bc8a-811a6d174d01": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Juan_lebron_homepage.jpg",
+        "image_width": 700,
+        "subtitle": "Nieuw",
+        "title": "Babolat",
+        "text": "<p>Hoogwaardige rackets is het standaard van de nieuwe collectie van Babolat. De rackets van Babolat gaan soms wel 2 keer langer mee in vergelijking met andere merken.<\/p>",
+        "button_label": "bekijk de collectie",
+        "button_link": "https:\/\/www.padelcasa.com\/collections\/babolat",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "ea1447e4-f7c5-436e-9dfd-0577975f15c0": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Arturo_coello_homepage.jpg",
+        "image_width": 700,
+        "subtitle": "Nieuw",
+        "title": "HEAD",
+        "text": "<p>Head is in 2023 weer verrijkt met nieuwe designs en geavanceerde technieken! bekijk snel de nieuwe collectie van Head!<\/p>",
+        "button_label": "Bekijk de collectie",
+        "button_link": "shopify:\/\/collections\/head-padel-racket-kopen",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blogs",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collections",
+    "8ecdbd4f-af66-43ec-8a3d-f40af89f9aaf",
+    "promo-grid",
+    "promo-grid2",
+    "1673356688e41e1775",
+    "1b4ff4f3-bf0d-49fd-930d-cb1702a5468e",
+    "0219e51a-bc74-4113-bc8a-811a6d174d01",
+    "ea1447e4-f7c5-436e-9dfd-0577975f15c0",
+    "blog-posts"
+  ]
+}
