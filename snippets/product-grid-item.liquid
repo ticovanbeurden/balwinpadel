@@ -49,7 +49,7 @@ Arguments
   endif
 -%}
 
-<div class="grid__item grid-product {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+<div class="grid__item grid-product {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-variant-id="{{- product.selected_or_first_available_variant.id -}}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
     {%- if has_custom_label -%}
       <div class="grid-product__tag grid-product__tag--custom">
@@ -81,9 +81,23 @@ Arguments
     <a href="{{ product.url | within: collection }}" class="grid-product__link">
       <div class="grid-product__image-mask">
         {%- if quick_shop_enable -%}
-          <div class="quick-product__btn quick-product__btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
-            <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
-          </div>
+          {%- if settings.quick_shop_button == 'quick_shop' -%}
+            <div class="quick-product__btn quick-product__btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
+              <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
+            </div>
+          {%- elsif settings.quick_shop_button == 'quick_atc' and product.selected_or_first_available_variant.available -%}
+            {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
+            {%- form 'product', product, id: form_id, class: 'product-single__form' -%}
+              
+              <button data-product-item-atc -{{ section.id }}-{{ product.id }} class="quick-product__btn quick-product__btn--not-ready small--hide"
+                {% unless product.selected_or_first_available_variant %} disabled="disabled"{% endunless %}
+                {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+                name="add"
+              >
+                <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
+              </button>
+            {%- endform -%}
+          {%- endif -%}
         {%- endif -%}
         {%- if fixed_aspect_ratio -%}
           <div

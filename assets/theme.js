@@ -3089,6 +3089,40 @@ lazySizesConfig.expFactor = 4;
   
     return QtySelector;
   })();
+
+  const addQuickShopButton = (productEl) => {
+    const atcButton = productEl.querySelector('[data-product-item-atc]');
+    if (!atcButton) return;
+    atcButton.addEventListener('click', e => {
+      e.preventDefault();
+      var formData = {
+        'items': [{
+         'id': productEl.dataset.variantId,
+         'quantity': 1
+         }]
+        };
+
+        e.preventDefault();
+        fetch(theme.routes.cartAdd, {
+          method: 'POST',
+          body: JSON.stringify(formData),
+          credentials: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Requested-With': 'XMLHttpRequest'
+          }
+        })
+        .then(response => response.json())
+        .then(function(data) {
+          document.dispatchEvent(new CustomEvent('ajaxProduct:added', {
+            detail: {
+              product: data,
+              addToCartBtn: ''
+            }
+          }));
+        });
+      }); 
+  }
   
   theme.initQuickShop = function() {
     var ids = [];
@@ -3100,6 +3134,7 @@ lazySizesConfig.expFactor = 4;
   
     products.forEach(product => {
       product.addEventListener('mouseover', productMouseover);
+      addQuickShopButton(product);
     });
   
     function productMouseover(evt) {
