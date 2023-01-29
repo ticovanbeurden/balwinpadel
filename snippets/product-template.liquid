@@ -131,12 +131,20 @@
 
               {%- if isModal -%}
                 <p class="h2 product-single__title">
-                  {{ product.title }}
+                  {%- if product.title contains 'padel racket' -%}
+                    {{- product.title | replace: 'padel racket', "<span class='product-single__title--hide'>padel racket</span>" -}}
+                  {%- else -%}
+                    {{- product.title -}}
+                  {%- endif -%}
                 </p>
               {%- else -%}
                 <h1 class="h2 product-single__title">
                   {%- unless product.empty? -%}
-                    {{ product.title }}
+                    {%- if product.title contains 'padel racket' -%}
+                      {{- product.title | replace: 'padel racket', "<span class='product-single__title--hide'>padel racket</span>" -}}
+                    {%- else -%}
+                      {{- product.title -}}
+                    {%- endif -%}
                   {%- else -%}
                     {{ 'home_page.onboarding.product_title' | t }}
                   {%- endunless -%}

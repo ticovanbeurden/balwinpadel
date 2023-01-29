@@ -10,9 +10,19 @@
 {% endcomment %}
 {% layout none %}
 
+{% assign total_savings = 0 %}
+{% for item in cart.items %}
+  {% if item.product.compare_at_price > 0 %}
+    {% assign saving = item.product.compare_at_price | minus: item.product.price %}
+    {% assign saving = saving | times: item.quantity %}
+    {% assign total_savings = total_savings | plus: saving %}
+  {% endif %}
+{% endfor %}
+
 <div class="cart__items"
   data-count="{{ cart.item_count }}"
-  data-cart-subtotal="{{ cart.total_price }}">
+  data-cart-subtotal="{{ cart.total_price }}"
+  data-cart-discount="{{- total_savings -}}">
   {% for item in cart.items %}
     {%- render 'cart-item', product: item -%}
   {% endfor %}

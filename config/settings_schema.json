@@ -595,6 +595,22 @@
         "label": "t:settings_schema.product_tiles.settings.quick_shop_enable.label"
       },
       {
+        "type": "select",
+        "id": "quick_shop_button",
+        "label": "Quick shop button",
+        "default": "quick_shop",
+        "options": [
+          {
+            "value": "quick_shop",
+            "label": "Quick shop modal"
+          },
+          {
+            "value": "quick_atc",
+            "label": "Quick add to cart"
+          }
+        ]
+      },
+      {
         "type": "text",
         "id": "quick_shop_text",
         "label": "t:settings_schema.product_tiles.settings.quick_shop_text.label",

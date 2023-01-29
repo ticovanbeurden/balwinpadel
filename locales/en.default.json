@@ -117,6 +117,7 @@
       "remove": "Remove",
       "note": "Order note",
       "subtotal": "Subtotal",
+      "discount_total": "Bespaar nu",
       "discounts": "Discounts",
       "shipping_at_checkout": "Shipping, taxes, and discount codes calculated at checkout.",
       "update": "Update cart",
