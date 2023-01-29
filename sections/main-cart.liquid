@@ -48,6 +48,22 @@
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
 
+          {%- liquid 
+            assign total_discount = 0
+            for item in cart.items
+              if item.product.compare_at_price > 0
+                assign discount = item.product.compare_at_price | minus: item.product.price
+                assign discount = discount | times: item.quantity
+                assign total_discount = total_discount | plus: discount
+              endif
+            endfor
+          -%}
+
+          <div data-discount-wrapper class="cart__item-sub cart__item-row cart__items-total-discount {% if total_discount == 0 %} cart__items-total-discount--hidden {% endif %}">
+            <div >{{ 'cart.general.discount_total' | t }}</div>
+            <div data-discount>{{- total_discount | money -}}</div>
+          </div>
+
           {% if settings.cart_terms_conditions_enable %}
             <div class="cart__item-row cart__terms">
               <input type="checkbox" id="CartTerms" class="cart__terms-checkbox">

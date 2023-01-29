@@ -1663,6 +1663,8 @@ lazySizesConfig.expFactor = 4;
       discounts: '[data-discounts]',
       savings: '[data-savings]',
       subTotal: '[data-subtotal]',
+      discount: '[data-discount]',
+      discountWrapper : '[data-discount-wrapper]',
   
       cartBubble: '.cart-link__bubble',
       cartNote: '[name="note"]',
@@ -1693,6 +1695,8 @@ lazySizesConfig.expFactor = 4;
       this.discounts = form.querySelector(selectors.discounts);
       this.savings = form.querySelector(selectors.savings);
       this.subtotal = form.querySelector(selectors.subTotal);
+      this.discount = form.querySelector(selectors.discount);
+      this.discountWrapper = form.querySelector(selectors.discountWrapper);
       this.termsCheckbox = form.querySelector(selectors.termsCheckbox);
       this.noteInput = form.querySelector(selectors.cartNote);
   
@@ -1765,7 +1769,8 @@ lazySizesConfig.expFactor = 4;
         var count = parseInt(items.dataset.count);
         var subtotal = items.dataset.cartSubtotal;
         var savings = items.dataset.cartSavings;
-  
+        var discount = items.dataset.cartDiscount;
+
         this.updateCartDiscounts(markup.discounts);
         this.updateSavings(savings);
   
@@ -1784,6 +1789,11 @@ lazySizesConfig.expFactor = 4;
         // Update subtotal
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
   
+        // Update discounts
+        this.discount.innerHTML = theme.Currency.formatMoney(discount, theme.settings.moneyFormat);
+        const discountInt = parseInt(discount);
+        this.discountWrapper.classList[discountInt > 0 ? 'remove' : 'add']('cart__items-total-discount--hidden');
+
         this.reInit();
   
         if (window.AOS) { AOS.refreshHard() }
