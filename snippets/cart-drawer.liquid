@@ -62,7 +62,8 @@
             <div data-discount>{{- total_discount | money -}}</div>
           </div>
 
-          <div class="cart__item-row text-center">
+          <div class="cart__item-row cart__item--usp text-center">
+            <img class="cart__item--check" loading=lazy width="10" height="10" src="{{ 'check-mark.png' | asset_img_url: 'icon' }}">
             <small>
               {{ 'cart.general.shipping_at_checkout' | t }}<br />
             </small>
