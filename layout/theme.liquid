@@ -58,6 +58,7 @@
       searchPages: {{ 'general.search.pages' | t | json }},
       searchArticles: {{ 'general.search.articles' | t | json }},
       productFrom: {{ 'products.general.from_text_html' | t: price: '' | json }},
+      cartShipping_treshold: {{- 'cart.general.shipping_treshold' | t: amount_to_go: '_amount_to_go_' | json -}}
     };
     theme.settings = {
       cartType: {{ settings.cart_type | json }},

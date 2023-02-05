@@ -1650,6 +1650,15 @@ lazySizesConfig.expFactor = 4;
       return attribute.trim();
     }
   }
+
+  const updateProgressBar = (subtotal, progressBar, progressText, progressWrapper) => {
+    const treshHold = 7500;
+    let progress = (subtotal / treshHold) * 100;
+    progress = progress > 100 ? 100 : progress;
+    progressText.innerHTML = theme.strings.cartShipping_treshold.replace('_amount_to_go_', theme.Currency.formatMoney(treshHold - subtotal, theme.moneyFormat));
+    progressBar.style.width = `${progress}%`;
+    progressWrapper.classList[progress === 100 ? 'add' : 'remove']('free-shipping');
+  }
   
   /*============================================================================
     CartForm
@@ -1665,7 +1674,9 @@ lazySizesConfig.expFactor = 4;
       subTotal: '[data-subtotal]',
       discount: '[data-discount]',
       discountWrapper : '[data-discount-wrapper]',
-  
+      shippingProgress: '[data-shipping-progress]',
+      shippingWrapper: '[data-shipping-wrapper]',
+      shippingText: '[data-shipping-text]',
       cartBubble: '.cart-link__bubble',
       cartNote: '[name="note"]',
       termsCheckbox: '.cart__terms-checkbox',
@@ -1697,6 +1708,9 @@ lazySizesConfig.expFactor = 4;
       this.subtotal = form.querySelector(selectors.subTotal);
       this.discount = form.querySelector(selectors.discount);
       this.discountWrapper = form.querySelector(selectors.discountWrapper);
+      this.shippingProgress = form.querySelector(selectors.shippingProgress);
+      this.shippingWrapper = form.querySelector(selectors.shippingWrapper);
+      this.shippingText = form.querySelector(selectors.shippingText);
       this.termsCheckbox = form.querySelector(selectors.termsCheckbox);
       this.noteInput = form.querySelector(selectors.cartNote);
   
@@ -1770,7 +1784,6 @@ lazySizesConfig.expFactor = 4;
         var subtotal = items.dataset.cartSubtotal;
         var savings = items.dataset.cartSavings;
         var discount = items.dataset.cartDiscount;
-
         this.updateCartDiscounts(markup.discounts);
         this.updateSavings(savings);
   
@@ -1789,6 +1802,8 @@ lazySizesConfig.expFactor = 4;
         // Update subtotal
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
   
+        if (count > 0 && this.shippingProgress) updateProgressBar(subtotal, this.shippingProgress, this.shippingText, this.shippingWrapper);
+
         // Update discounts
         this.discount.innerHTML = theme.Currency.formatMoney(discount, theme.settings.moneyFormat);
         const discountInt = parseInt(discount);

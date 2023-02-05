@@ -68,7 +68,7 @@
             </small>
           </div>
 
-          {% if settings.cart_terms_conditions_enable %}
+          {%- if settings.cart_terms_conditions_enable -%}
             <div class="cart__item-row cart__terms">
               <input type="checkbox" id="CartTermsDrawer" class="cart__terms-checkbox">
               <label for="CartTermsDrawer">
@@ -79,8 +79,25 @@
                 {% endif %}
               </label>
             </div>
-          {% endif %}
+          {%- endif -%}
 
+          {%- liquid 
+            assign threshold = settings.cart_free_shipping_threshold | money_without_currency | replace: ',', '.'
+            assign total_price = cart.total_price | money_without_currency | replace: ',', '.'
+            assign amount_to_go = threshold | minus: total_price | times: 100 | money
+            assign percentage = total_price | divided_by: threshold | times: 100 | round: 2
+            if percentage > 100
+              assign percentage = 100
+            endif 
+          -%}
+
+          {%- if settings.cart_free_shipping_threshold -%}
+            <div data-shipping-wrapper class="tw-text-center tw-mb-3 tw-text-[12px] tw-gap-y-2 tw-flex tw-flex-col {% if free-percentage == 100 %} free-shipping {% endif %}">
+                <small data-shipping-text class='tw-text-[12px] [.free-shipping_&]:tw-hidden'>{{- 'cart.general.shipping_treshold' | t: amount_to_go: amount_to_go -}}</small>
+                <small class='tw-text-[12px] tw-hidden [.free-shipping_&]:tw-block'>{{- 'cart.general.shipping_free' | t -}}</small>
+              <div class="tw-h-1 tw-w-full tw-bg-black/10"><div class='tw-bg-black tw-h-full tw-w-2/3 tw-transition-all tw-duration-300' data-shipping-progress style="width: {{ percentage | append: '%' }}"></div></div>
+            </div>
+          {%- endif -%}
           <div class="cart__checkout-wrapper">
             <button type="submit" name="checkout" data-terms-required="{{ settings.cart_terms_conditions_enable }}" class="btn cart__checkout">
               {{ 'cart.general.checkout' | t }}
