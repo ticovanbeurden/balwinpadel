@@ -86,9 +86,18 @@
               {{ 'cart.general.checkout' | t }}
             </button>
 
-            {% if additional_checkout_buttons and settings.cart_additional_buttons %}
+            {%- if additional_checkout_buttons and settings.cart_additional_buttons -%}
               <div class="additional-checkout-buttons additional-checkout-buttons--vertical">{{ content_for_additional_checkout_buttons }}</div>
-            {% endif %}
+            {%- endif -%}
+            <div class="cart__payments">
+              {%- for payment in shop.enabled_payment_types -%}
+                {%- liquid 
+                  assign payment_string = 'payment_' | append: payment | append: '.png'
+                  assign payment_icon = payment_string | asset_img_url: 'thumb'
+                -%}
+                <img onerror="this.style.display='none'" width='20' height='20' class="cart__payment-icon" loading='lazy' src='{{- payment_icon -}}'>
+              {%- endfor -%}
+            </div>
           </div>
         </div>
       </div>
