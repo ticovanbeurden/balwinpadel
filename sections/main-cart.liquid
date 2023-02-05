@@ -92,6 +92,15 @@
               {{ 'cart.general.shipping_at_checkout' | t }}<br />
             </small>
           </div>
+          <div class="cart__payments">
+            {%- for payment in shop.enabled_payment_types -%}
+              {%- liquid 
+                assign payment_string = 'payment_' | append: payment | append: '.png'
+                assign payment_icon = payment_string | asset_img_url: 'thumb'
+              -%}
+              <img width='20' height='20' onerror="this.style.display='none'" class="cart__payment-icon" loading='lazy' src='{{- payment_icon -}}'>
+            {%- endfor -%}
+          </div>
         </div>
       </div>
     </form>

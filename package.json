@@ -1,0 +1,23 @@
+{
+  "name": "padelcasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss build src/css/application.css -o assets/application.css.liquid",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ticovanbeurden/padelcasa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ticovanbeurden/padelcasa/issues"
+  },
+  "homepage": "https://github.com/ticovanbeurden/padelcasa#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

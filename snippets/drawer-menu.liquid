@@ -26,7 +26,14 @@
           {%- if link.links != blank -%}
             {%- assign has_dropdown = true -%}
           {%- endif -%}
-
+          {%- liquid 
+            assign lowercased_title = link.title | handleize | downcase
+            if lowercased_title contains 'sale'
+              assign item_class = 'mobile-nav__link--sale'
+            else 
+              assign item_class = ''
+            endif
+          -%}
           <li class="mobile-nav__item appear-animation appear-delay-{{ animation_row }}">
             {%- if has_dropdown -%}
               <div class="mobile-nav__has-sublist">
@@ -45,7 +52,7 @@
                   </button>
                 {%- else -%}
                   <a href="{{ link.url }}"
-                    class="mobile-nav__link mobile-nav__link--top-level"
+                    class="mobile-nav__link {{ item_class }} mobile-nav__link--top-level"
                     id="Label-{{ child_list_handle }}"
                     {% if link.active %}data-active="true"{% endif %}>
                     {{ link.title }}
@@ -61,7 +68,7 @@
                 {%- endif -%}
               </div>
             {%- else -%}
-              <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level"{% if link.active %} data-active="true"{% endif %}>{{ link.title }}</a>
+              <a href="{{ link.url }}" class="mobile-nav__link {{ item_class }} mobile-nav__link--top-level"{% if link.active %} data-active="true"{% endif %}>{{ link.title }}</a>
             {%- endif -%}
 
             {%- if has_dropdown -%}

@@ -16,11 +16,18 @@
     {%- liquid
       assign has_dropdown = false
       assign is_megamenu = false
+      assign lowercased_title = link.title | handleize | downcase
+
       if link.links != blank
         assign has_dropdown = true
         if link.levels > 1
           assign is_megamenu = true
         endif
+      endif
+      if lowercased_title contains 'sale'
+        assign item_class = 'site-nav__link--sale'
+      else 
+        assign item_class = ''
       endif
     -%}
 
@@ -28,7 +35,7 @@
       class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}"
       {% if has_dropdown %}aria-haspopup="true"{% endif %}>
 
-      <a href="{{ link.url }}" class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}">
+      <a href="{{ link.url }}" class="site-nav__link {{ item_class }}  site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}">
         {{ link.title }}
       </a>
       {%- if is_megamenu -%}

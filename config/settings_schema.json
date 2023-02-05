@@ -886,6 +886,12 @@
         "type": "url",
         "id": "cart_terms_conditions_page",
         "label": "t:settings_schema.cart.settings.cart_terms_conditions_page.label"
+      },
+      {
+        "id": "cart_free_shipping_threshold",
+        "type": "number",
+        "label": "Free shipping threshold",
+        "info": "Insert number with trailing zeros (e.g. 10000)"
       }
     ]
   },
