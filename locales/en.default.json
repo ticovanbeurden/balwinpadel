@@ -116,6 +116,7 @@
       "title": "Cart",
       "remove": "Remove",
       "note": "Order note",
+      "total": "Total",
       "subtotal": "Subtotal",
       "discount_total": "Bespaar nu",
       "discounts": "Discounts",

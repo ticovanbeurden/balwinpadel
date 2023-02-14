@@ -21,6 +21,7 @@
 
 <div class="cart__items"
   data-count="{{ cart.item_count }}"
+  data-cart-total="{{ cart.total_price | plus: total_savings }}"
   data-cart-subtotal="{{ cart.total_price }}"
   data-cart-discount="{{- total_savings -}}">
   {% for item in cart.items %}

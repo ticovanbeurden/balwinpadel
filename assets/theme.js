@@ -1671,6 +1671,7 @@ lazySizesConfig.expFactor = 4;
       qtySelector: '.js-qty__wrapper',
       discounts: '[data-discounts]',
       savings: '[data-savings]',
+      total: '[data-total]',
       subTotal: '[data-subtotal]',
       discount: '[data-discount]',
       discountWrapper : '[data-discount-wrapper]',
@@ -1705,6 +1706,7 @@ lazySizesConfig.expFactor = 4;
   
       this.discounts = form.querySelector(selectors.discounts);
       this.savings = form.querySelector(selectors.savings);
+      this.total = form.querySelector(selectors.total);
       this.subtotal = form.querySelector(selectors.subTotal);
       this.discount = form.querySelector(selectors.discount);
       this.discountWrapper = form.querySelector(selectors.discountWrapper);
@@ -1781,6 +1783,7 @@ lazySizesConfig.expFactor = 4;
         var markup = this._parseProductHTML(html);
         var items = markup.items;
         var count = parseInt(items.dataset.count);
+        var total = items.dataset.cartTotal;
         var subtotal = items.dataset.cartSubtotal;
         var savings = items.dataset.cartSavings;
         var discount = items.dataset.cartDiscount;
@@ -1799,6 +1802,9 @@ lazySizesConfig.expFactor = 4;
         this.products.innerHTML = '';
         this.products.append(items);
   
+        // Update subtotal
+        this.total.innerHTML = theme.Currency.formatMoney(total, theme.settings.moneyFormat);
+
         // Update subtotal
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
   
