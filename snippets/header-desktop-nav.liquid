@@ -16,7 +16,7 @@
     {%- liquid
       assign has_dropdown = false
       assign is_megamenu = false
-      assign lowercased_title = link.title | handleize | downcase
+      assign link_url = link.url | handleize | downcase
 
       if link.links != blank
         assign has_dropdown = true
@@ -24,7 +24,7 @@
           assign is_megamenu = true
         endif
       endif
-      if lowercased_title contains 'sale'
+      if link_url contains 'sale'
         assign item_class = 'site-nav__link--sale'
       else 
         assign item_class = ''
