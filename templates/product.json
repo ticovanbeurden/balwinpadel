@@ -22,6 +22,13 @@
             "color_swatches": false
           }
         },
+        "6373a12d-c3ba-493f-9427-7333c08d4d92": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Vòòr 23:00 besteld, morgen in huis"
+          }
+        },
         "sales_point": {
           "type": "sales_point",
           "settings": {
@@ -41,20 +48,6 @@
           "settings": {
             "icon": "package",
             "text": "Vanaf €75 - gratis verzending"
-          }
-        },
-        "6373a12d-c3ba-493f-9427-7333c08d4d92": {
-          "type": "sales_point",
-          "settings": {
-            "icon": "truck",
-            "text": "Vòòr 16:00 besteld, morgen in huis"
-          }
-        },
-        "4eaa43b4-67bf-4a8e-bd2b-a8da5910594b": {
-          "type": "sales_point",
-          "settings": {
-            "icon": "gift",
-            "text": "Gratis PadelCasa tas bij elk racket👜"
           }
         },
         "inventory_status": {
@@ -105,11 +98,10 @@
         "price",
         "separator",
         "variant_picker",
+        "6373a12d-c3ba-493f-9427-7333c08d4d92",
         "sales_point",
         "88255b20-f1bb-4380-916a-5cf67b285057",
         "1f15a253-6e72-4c5f-b4f6-8342bccf3199",
-        "6373a12d-c3ba-493f-9427-7333c08d4d92",
-        "4eaa43b4-67bf-4a8e-bd2b-a8da5910594b",
         "inventory_status",
         "buy_buttons",
         "description",
@@ -234,7 +226,7 @@
       "type": "product-recommendations",
       "settings": {
         "show_product_recommendations": true,
-        "product_recommendations_heading": "You may also like",
+        "product_recommendations_heading": "Speciaal voor jou",
         "related_count": 5
       }
     },

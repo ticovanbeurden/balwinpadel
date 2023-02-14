@@ -52,6 +52,7 @@
     "product_save_type": "percent",
     "vendor_enable": false,
     "quick_shop_enable": true,
+    "quick_shop_button": "quick_atc",
     "quick_shop_text": "voeg toe aan winkelmandje",
     "product_grid_image_size": "natural",
     "product_hover_image": true,
@@ -69,6 +70,7 @@
     "cart_additional_buttons": false,
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
+    "cart_free_shipping_threshold": 7500,
     "social_facebook_link": "https:\/\/www.facebook.com\/padelcasa",
     "social_twitter_link": "",
     "social_pinterest_link": "",
@@ -112,7 +114,6 @@
     "inventory_threshold": 6,
     "inventory_transfers_enable": false,
     "product_zoom_enable": true,
-    "quick_shop_button": "quick_atc",
     "product_color_swatches": false,
     "collection_color_swatches": false,
     "product_content_1": "product-tab-test",
@@ -144,8 +145,8 @@
           "1524770292306": {
             "type": "announcement",
             "settings": {
-              "text": "Gratis padelcasa tas twv €10 bij elk racket",
-              "link_text": "Voor 16:00 besteld? Morgen in huis!",
+              "text": "voor 23:00 besteld, morgen in huis!",
+              "link_text": "",
               "link": "shopify:\/\/collections\/padel-rackets"
             }
           }

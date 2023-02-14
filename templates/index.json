@@ -23,12 +23,32 @@
             "focal_point": "20% 0"
           }
         },
+        "32b4ab4e-df0c-4387-97b9-b4b5de5f7357": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "Dát is pas winnen.",
+            "link": "",
+            "link_text": "shop nu",
+            "link_2": "",
+            "link_text_2": "keuzehulp",
+            "color_accent": "#e58951",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Website_fotos_2.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
         "slideshow-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "top_subheading": "Padelcasa",
             "title": "De padel specialist",
-            "title_size": 60,
+            "title_size": 80,
             "subheading": "Dat is pas winnen.",
             "link": "shopify:\/\/collections\/padel-rackets",
             "link_text": "Shop nu",
@@ -42,81 +62,94 @@
             "overlay_opacity": 0,
             "focal_point": "20% 0"
           }
+        },
+        "e6f265eb-a276-41c1-87df-eaa99f3ea8d3": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "Dát is pas winnen.",
+            "link": "",
+            "link_text": "Bekijk onze valentijn specials",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#a61a1a",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Website_fotos.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
         "slideshow-0",
-        "slideshow-1"
+        "32b4ab4e-df0c-4387-97b9-b4b5de5f7357",
+        "slideshow-1",
+        "e6f265eb-a276-41c1-87df-eaa99f3ea8d3"
       ],
       "settings": {
-        "section_height": "750px",
-        "mobile_height": "auto",
+        "section_height": "450px",
+        "mobile_height": "250px",
         "parallax": false,
         "style": "bars",
         "autoplay": true,
         "autoplay_speed": 10
       }
     },
-    "featured-collections": {
+    "4a380ac9-6ddf-4a25-9442-818efb06cb1e": {
       "type": "featured-collections",
       "blocks": {
-        "featured-collections-0": {
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-0": {
           "type": "collection",
           "settings": {
-            "collection": "padel-rackets",
-            "title": "Padel Rackets",
+            "collection": "voorbeeld-padel-rackets",
+            "title": "",
             "focal_point": "center center"
           }
         },
-        "featured-collections-1": {
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-1": {
           "type": "collection",
           "settings": {
-            "collection": "padel-ballen",
-            "title": "Padel ballen",
+            "collection": "voorbeeld-padel-ballen",
+            "title": "",
             "focal_point": "center center"
           }
         },
-        "featured-collections-2": {
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-2": {
           "type": "collection",
           "settings": {
-            "collection": "padel-accessoires",
-            "title": "padel accessoires",
+            "collection": "voorbeeld-padel-tassen",
+            "title": "",
             "focal_point": "center center"
           }
         },
-        "featured-collections-3": {
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-3": {
           "type": "collection",
           "settings": {
-            "collection": "padel-grips",
-            "title": "padel grips",
-            "focal_point": "center center"
-          }
-        },
-        "c2714005-6315-4ffb-8f0d-f1608c82e13f": {
-          "type": "collection",
-          "settings": {
-            "collection": "padel-tassen",
-            "title": "padel tassen",
+            "collection": "voorbeeld-accessoires-grips",
+            "title": "",
             "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "featured-collections-0",
-        "featured-collections-1",
-        "featured-collections-2",
-        "featured-collections-3",
-        "c2714005-6315-4ffb-8f0d-f1608c82e13f"
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-0",
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-1",
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-2",
+        "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-3"
       ],
       "settings": {
-        "title": "CATEGORIEËN",
+        "title": "Collection list",
         "divider": false,
-        "per_row": 5,
+        "per_row": 4,
         "enable_gutter": true
       }
     },
     "8ecdbd4f-af66-43ec-8a3d-f40af89f9aaf": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Racket_testen_PC.jpg",
         "image2": "shopify:\/\/shop_images\/Over_ons-7.jpg",
@@ -266,7 +299,7 @@
     "1b4ff4f3-bf0d-49fd-930d-cb1702a5468e": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Ale_galan_homepage.jpg",
+        "image": "shopify:\/\/shop_images\/3_6030ba6b-c965-4b1f-a167-9323b2c6ba6e.png",
         "image_width": 700,
         "subtitle": "Nieuw",
         "title": "Adidas RACKETS & TASSEN",
@@ -282,7 +315,7 @@
     "0219e51a-bc74-4113-bc8a-811a6d174d01": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Juan_lebron_homepage.jpg",
+        "image": "shopify:\/\/shop_images\/5.png",
         "image_width": 700,
         "subtitle": "Nieuw",
         "title": "Babolat",
@@ -298,7 +331,7 @@
     "ea1447e4-f7c5-436e-9dfd-0577975f15c0": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Arturo_coello_homepage.jpg",
+        "image": "shopify:\/\/shop_images\/4_5e2cddd4-4d08-4ddb-9e7d-da339f79679c.png",
         "image_width": 700,
         "subtitle": "Nieuw",
         "title": "HEAD",
@@ -325,11 +358,70 @@
         "blog_image_size": "wide",
         "divider": false
       }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-rackets",
+            "title": "Padel Rackets",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-ballen",
+            "title": "Padel ballen",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-accessoires",
+            "title": "padel accessoires",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "padel-grips",
+            "title": "padel grips",
+            "focal_point": "center center"
+          }
+        },
+        "c2714005-6315-4ffb-8f0d-f1608c82e13f": {
+          "type": "collection",
+          "settings": {
+            "collection": "padel-tassen",
+            "title": "padel tassen",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collections-0",
+        "featured-collections-1",
+        "featured-collections-2",
+        "featured-collections-3",
+        "c2714005-6315-4ffb-8f0d-f1608c82e13f"
+      ],
+      "settings": {
+        "title": "CATEGORIEËN",
+        "divider": false,
+        "per_row": 5,
+        "enable_gutter": true
+      }
     }
   },
   "order": [
     "slideshow",
-    "featured-collections",
+    "4a380ac9-6ddf-4a25-9442-818efb06cb1e",
     "8ecdbd4f-af66-43ec-8a3d-f40af89f9aaf",
     "promo-grid",
     "promo-grid2",
@@ -337,6 +429,7 @@
     "1b4ff4f3-bf0d-49fd-930d-cb1702a5468e",
     "0219e51a-bc74-4113-bc8a-811a6d174d01",
     "ea1447e4-f7c5-436e-9dfd-0577975f15c0",
-    "blog-posts"
+    "blog-posts",
+    "featured-collections"
   ]
 }
