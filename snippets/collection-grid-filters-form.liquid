@@ -21,6 +21,12 @@
 
 <form class="filter-form">
 {%- for filter in filters -%}
+  {%- if filter.param_name contains 'price' or filter.param_name contains 'niveau' -%}
+    {%- assign collapsed = false -%}
+  {%- else -%}
+    {%- assign collapsed = true -%}
+  {%- endif -%}
+
   {%- capture filter_id -%}filter-{{ filter.label | handleize }}{%- endcapture -%}
   {%- assign filter_index = forloop.index -%}
 
