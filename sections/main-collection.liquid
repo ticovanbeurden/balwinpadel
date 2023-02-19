@@ -4,8 +4,9 @@
   for filter in collection.filters
     assign current_filter_size = current_filter_size | plus: filter.active_values.size
   endfor
--%}
 
+  assign filterGroups = section.blocks | where: 'type', 'filter_price_range'
+-%}
 <div
   class="collection-content"
   data-section-id="{{ section.id }}"
@@ -32,6 +33,9 @@
               endcase
             endfor
           -%}
+          {%- if collection.metafields.filter.quick_price_filter -%}
+            {%- render 'collection.quick_price_filter', filterGroups: filterGroups -%}
+          {%- endif -%}
           {%- paginate collection.products by paginate_by -%}
           {%- for block in section.blocks -%}
             <div {{ block.shopify_attributes }} {%- if block.type == 'product-grid' -%}data-scroll-to{%- endif -%}>
@@ -111,6 +115,18 @@
   "settings": [
     {
       "type": "header",
+      "content": "Extra payment filter"
+    },
+    {
+      "type": "textarea",
+      "id": "price_filters",
+      "label": "price_filters",
+      "default": "0.00-100.00,100.00-200.00,200.00-",
+      "info": "Add values in the following format: 0.00-100.00,100.00-200.00,200.00- etc. Leave the last value empty so we can use a dynamic value.",
+      "placeholder": "0.00-100.00,100.00-200.00,200.00-"
+    },
+    {
+      "type": "header",
       "content": "t:sections.main-collection.settings.header_filtering_and_sorting"
     },
     {
@@ -160,6 +176,38 @@
       "type": "collection_description",
       "name": "t:sections.main-collection.blocks.collection_description.name",
       "limit": 1
+    },
+    {
+      "type": "filter_price_range",
+      "name": "Filter group",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Filter group",
+          "info": "Enable this feature on collection level through the metafield"
+        },
+        {
+          "type": "paragraph",
+          "content": "Insert prices in the following format: 0.00,100.00,200.00."
+        },
+        {
+          "type": "text",
+          "id": "start",
+          "label": "Start",
+          "default": "0.00"
+        },
+        {
+          "type": "text",
+          "id": "end",
+          "label": "End",
+          "default": "100.00"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background image"
+        }
+      ]
     },
     {
       "type": "product_grid",

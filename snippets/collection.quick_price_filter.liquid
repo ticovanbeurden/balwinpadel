@@ -1,0 +1,64 @@
+{%- liquid 
+  for filter in collection.filters
+    case filter.type
+      when 'price_range'
+        assign min_price_value = filter.min_value.value
+        assign max_price_value = filter.max_value.value
+        assign max_price_range_value = filter.range_max
+    endcase
+  endfor
+-%}
+<div style='grid-template-columns: repeat({{ filterGroups.size }}, minmax(0, 1fr));' class='tw-grid tw-gap-2'>
+  {%- for filter in filterGroups -%}
+    {%- liquid
+      assign minRange = filter.settings.start
+      assign maxRange = filter.settings.end
+      capture label
+        echo minRange | times: 100 | money
+        echo ' - '
+        echo maxRange | times: 100 | money
+      endcapture
+      assign minValueAdjust = minRange | times: 100 | remove: '.0' | plus: 0
+      assign maxValueAdjust = maxRange | times: 100 | remove: '.0' | plus: 0
+      if min_price_value == minValueAdjust and max_price_value == maxValueAdjust
+        assign active = true
+      else
+        assign active = false
+      endif
+    -%}
+    <form class="filter-form">
+      <li class="tag tw-hidden">
+        <label class="tag__checkbox-wrapper text-label">
+          <input
+          type="checkbox"
+          class="tag__input dummy-checkbox"
+          checked
+          name="filter.v.price.gte"
+          value="{{- minRange -}}">
+          <span class="tag__checkbox tw-hidden"></span>
+          <span>
+              <span class="tag__text"></span>
+          </span>
+      </label>
+    </li>
+    <li class="tag">
+      <label class="tag__checkbox-wrapper tw-relative tw-aspect-square text-label tw-w-full tw-transition-all hover:tw-bg-opacity-90 tw-cursor-pointer tw-text-white tw-uppercase tw-flex tw-items-center tw-justify-center">
+        {%- render 'image-element'
+          img: filter.settings.image,
+          img_width: 500,
+          classes: 'tw-absolute tw-w-full tw-h-full tw-object-cover tw-object-center tw-inset-0',
+          sizes: '100%'
+        -%}
+        <div class='tw-bg-black/30 tw-absolute tw-w-full tw-h-full tw-inset-0'></div>
+        <input
+        type="checkbox"
+        class="tag__input dummy-checkbox"
+        name="filter.v.price.lte"
+        value="{{- maxRange -}}">
+        <span class="tag__checkbox tw-hidden"></span>
+          <span class="tag__text tw-z-10 tw-text-center">{{ label }}</span>
+      </label>
+    </li>
+  </form>
+  {%- endfor -%}
+</div>

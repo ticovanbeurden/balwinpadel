@@ -1523,7 +1523,16 @@ lazySizesConfig.expFactor = 4;
       getUpdatedParams: function (currentParams, newParams) {
         const clone = new URLSearchParams(currentParams);
         const preservedParams = ['sort_by', 'q', 'options[prefix]', 'type'];
-  
+        
+        const paymentParams = ['filter.v.price.gte','filter.v.price.lte'];
+        
+        // Remove active payment params
+        for (const [key, value] of clone.entries()) {
+          if (paymentParams.includes(key)) {
+            clone.delete(key);
+          }
+        }
+
         // Find what params need to be removed
         // delete happens first as we cannot specify keys based off of values
         for (const [key, value] of clone.entries()) {
@@ -1538,7 +1547,7 @@ lazySizesConfig.expFactor = 4;
             clone.append(key, value);
           }
         }
-  
+        console.log('Clone: ', clone.toString());
         return clone;
       },
   
@@ -6772,7 +6781,6 @@ lazySizesConfig.expFactor = 4;
         const parent = el.closest('li');
         const formEl = el.closest('form');
         const formData = new FormData(formEl);
-  
         this.renderActiveTag(parent, el);
         this.updateScroll(true);
         this.startLoading();

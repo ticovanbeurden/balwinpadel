@@ -362,6 +362,90 @@
                           ></div>
                       {%- endif -%}
                     </div>
+                  {%- when 'score_description' -%}
+                    {%- liquid 
+                      assign scale = '0,25,50,75,100' | split: ','
+                      assign scores = 'kracht,controle,handelbaarheid,sweetspot,totaalscore' | split: ','
+                      assign scoresAmount = 0
+                      for s in scores  
+                        assign metafield = product.metafields.custom[s]
+                        if metafield
+                          assign scoresAmount = scoresAmount | plus: 1
+                        endif
+                      endfor 
+                    -%}
+                    <div class='{% if scoresAmount == 0 %} tw-hidden {% endif %}'>
+                      <div class=''>
+                        <p class='tw-mb-2 tw-text-center tw-mx-auto tw-m-0 tw-uppercase tw-text-md'>{{- 'products.product.bar_chart_title' | t -}}</p>
+                      </div>
+                      <div class="tw-flex tw-pb-6">
+                        <div class='tw-flex tw-flex-col tw-text-end'>
+                          {%- for s in scores -%}
+                            {%- liquid 
+                              assign metafield = product.metafields.custom[s]
+                              assign score = metafield.value 
+                              assign progress = score | remove: '.'
+                            -%}
+                            <span class='tw-flex tw-items-center tw-justify-end tw-h-6 tw-mb-2 tw-pr-2 tw-text-xs tw-whitespace-nowrap'>
+                              {{- s -}}
+                            </span>
+                          {%- endfor -%}
+                        </div>
+                        <div class='tw-flex tw-w-full tw-flex-col tw-justify-start'>
+                          {%- for s in scores -%}
+                            {%- liquid 
+                              assign metafield = product.metafields.custom[s]
+                              assign score = metafield.value 
+                              assign progress = score | remove: '.'
+                            -%}
+                            <div style='background-color: #f0f0f0; width: {{ progress }}%' class="tw-h-6 tw-mb-2 tw-w-full tw-text-black tw-text-xs tw-flex tw-items-center tw-justify-center tw-mt-auto">
+                              {{- score | capitalize -}}
+                            </div>
+                          {%- endfor -%}
+                        </div>
+                        <div class='tw-flex tw-mb-4'>
+                      </div>
+                    </div>
+                  </div>
+                  {%- when 'specs' -%}
+                    {%- liquid 
+                      assign specs = block.settings.specs | split: ','
+                    -%}
+                    {% capture content --%}
+                      <div class="table-wrapper">
+                        <table>
+                          <tbody>
+                            {%- for spec in specs -%}
+                              {%- liquid 
+                                assign namespace = spec | split: '.' | first
+                                assign key = spec | split: '.' | last
+                                assign value = product.metafields.custom[key]
+                                if value == nil
+                                  continue 
+                                endif
+                                assign hasSpec = true
+                              -%}
+                              <tr>
+                                <td>
+                                  <p><b>{{ key | replace: '_', ' ' | capitalize }}</b></p>
+                                </td>
+                                <td>
+                                  <p><span style="font-weight: 400;">{{- value.value -}}</span></p>
+                                </td>
+                              </tr>
+                            {%- endfor -%}
+                          </tbody>
+                        </table>
+                      </div>
+                    {%- endcapture -%}
+                    {%- if hasSpec -%}
+                      {%- assign tab_id = block.id | append: product.id -%}
+                      {%- unless tab_content == blank and block.settings.title == blank -%}
+                        <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                          {%- render 'tab', id: tab_id, title: block.settings.title, content: content -%}
+                        </div>
+                      {%- endunless -%}
+                    {%- endif -%}
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
