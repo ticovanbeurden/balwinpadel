@@ -308,7 +308,7 @@
       "sale_price": "Sale price",
       "regular_price": "Regular price",
       "from_text_html": "from {{ price }}",
-      "receproducts.product.descriptiont_products": "Recently viewed",
+      "recent_products": "Recently viewed",
       "reviews": "Reviews"
     },
     "product": {
