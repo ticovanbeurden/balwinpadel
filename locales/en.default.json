@@ -308,16 +308,24 @@
       "sale_price": "Sale price",
       "regular_price": "Regular price",
       "from_text_html": "from {{ price }}",
-      "recent_products": "Recently viewed",
+      "receproducts.product.descriptiont_products": "Recently viewed",
       "reviews": "Reviews"
     },
     "product": {
+      "klaviyo_bis": {
+        "product_page_text": "Notify Me When Available",
+        "body_content": "Register to receive a notification when this item comes back in stock.",
+        "email_field_label": "Email",
+        "button_label": "Notify me when available",
+        "subscription_success_label": "You're in! We'll let you know when it's back."
+      },
       "description": "Description",
       "in_stock_label": "In stock, ready to ship",
       "stock_label": {
         "one": "Low stock - {{ count }} item left",
         "other": "Low stock - {{ count }} items left"
       },
+      "bar_chart_title": "Padelcasa scores",
       "sold_out": "Sold Out",
       "unavailable": "Unavailable",
       "quantity": "Quantity",
