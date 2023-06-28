@@ -11,47 +11,18 @@
     },
     "promo-grid": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
-        "banner": {
-          "type": "banner",
-          "disabled": true,
+        "5719afd0-ada4-46b0-9e1d-9a8c2ebac5b8": {
+          "type": "image",
           "settings": {
-            "heading": "Banner promotion",
-            "text": "Add the details of your promotion in smaller text",
-            "link": "",
-            "label": "Shop now",
-            "color_tint": "#e95454",
-            "color_tint_opacity": 8,
-            "framed": false
-          }
-        },
-        "advanced": {
-          "type": "advanced",
-          "disabled": true,
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "100",
-            "height": 500,
-            "text_size": 120,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
+            "image": "shopify:\/\/shop_images\/ZOMERDEALS.jpg",
+            "link": "shopify:\/\/collections\/padel-racket-sale",
+            "width": "100"
           }
         }
       },
       "block_order": [
-        "banner",
-        "advanced"
+        "5719afd0-ada4-46b0-9e1d-9a8c2ebac5b8"
       ],
       "settings": {
         "full_width": false,
@@ -66,7 +37,7 @@
         "subcollections": {
           "type": "subcollections",
           "settings": {
-            "subcollections_per_row": 5
+            "subcollections_per_row": 4
           }
         },
         "product_grid": {
@@ -82,14 +53,45 @@
           "type": "collection_description",
           "settings": {
           }
+        },
+        "3cdcc95f-5b58-4c45-8418-b97f8b3da0f0": {
+          "type": "filter_price_range",
+          "disabled": true,
+          "settings": {
+            "start": "0.00",
+            "end": "150",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30.jpg"
+          }
+        },
+        "8a7d508f-571c-494d-85df-3bffd3f49691": {
+          "type": "filter_price_range",
+          "disabled": true,
+          "settings": {
+            "start": "150",
+            "end": "300",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30.jpg"
+          }
+        },
+        "d04fbc6d-ad83-4da0-890f-fd59c49b2c6c": {
+          "type": "filter_price_range",
+          "disabled": true,
+          "settings": {
+            "start": "300",
+            "end": "500",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30.jpg"
+          }
         }
       },
       "block_order": [
         "subcollections",
         "product_grid",
-        "collection_description"
+        "collection_description",
+        "3cdcc95f-5b58-4c45-8418-b97f8b3da0f0",
+        "8a7d508f-571c-494d-85df-3bffd3f49691",
+        "d04fbc6d-ad83-4da0-890f-fd59c49b2c6c"
       ],
       "settings": {
+        "price_filters": "0.00-150.00,150.00-300.00,300.00-500.00",
         "enable_sidebar": true,
         "collapsed": true,
         "filter_style": "sidebar",

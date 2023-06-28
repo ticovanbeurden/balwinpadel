@@ -8,6 +8,16 @@
           "settings": {
           }
         },
+        "cffd8cbc-7721-4717-adde-17729f5fdd31": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#ffb400",
+            "star_size": 15,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": ""
+          }
+        },
         "separator": {
           "type": "separator",
           "settings": {
@@ -65,10 +75,22 @@
             "surface_pickup_enable": true
           }
         },
+        "cc09cf59-f52c-472c-a24f-c8977523aed7": {
+          "type": "score_description",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
-            "is_tab": true
+            "is_tab": false
+          }
+        },
+        "0558e72f-db02-4172-8390-9b5a641594b8": {
+          "type": "specs",
+          "settings": {
+            "title": "Specificaties",
+            "specs": "custom.kern_racket,\ncustom.afmetingen,\ncustom.balans,\ncustom.midden,\ncustom.bladformaat,\ncustom.druppel,\ncustom.materiaal_blad\ncustom.power_frame,\ncustom.soft_foam,\ncustom.model,\ncustom.gewicht,\ncustom.niveau,\ncustom.vorm"
           }
         },
         "tab": {
@@ -92,10 +114,16 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "24d6ba46-1b01-48a6-be98-db8821f91ca4": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "price",
+        "cffd8cbc-7721-4717-adde-17729f5fdd31",
         "separator",
         "variant_picker",
         "6373a12d-c3ba-493f-9427-7333c08d4d92",
@@ -104,10 +132,13 @@
         "1f15a253-6e72-4c5f-b4f6-8342bccf3199",
         "inventory_status",
         "buy_buttons",
+        "cc09cf59-f52c-472c-a24f-c8977523aed7",
         "description",
+        "0558e72f-db02-4172-8390-9b5a641594b8",
         "tab",
         "15da42b6-2e10-409f-96b8-7fba3ccac472",
-        "share"
+        "share",
+        "24d6ba46-1b01-48a6-be98-db8821f91ca4"
       ],
       "settings": {
         "sku_enable": false,
@@ -222,6 +253,26 @@
         "color_text": "#1c1d1d"
       }
     },
+    "a1e1da6b-21bd-46fd-8458-cd6e71a8f120": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18163752960280__a1e1da6b-21bd-46fd-8458-cd6e71a8f120-16789696219d576840-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"elfsight-sapp-8914988e-7657-459e-8f61-308a0dfa4927\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18163752960280__a1e1da6b-21bd-46fd-8458-cd6e71a8f120-16789696219d576840-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -249,6 +300,7 @@
     "text-and-image",
     "text-and-image2",
     "testimonials",
+    "a1e1da6b-21bd-46fd-8458-cd6e71a8f120",
     "product-recommendations",
     "recently-viewed",
     "collection-return"

@@ -136,7 +136,8 @@
       "terms_confirm": "U moet akkoord gaan met de algemene voorwaarden om door te gaan.",
       "discount_total": "Bespaar nu",
       "shipping_treshold": "Besteed {{ amount_to_go }} meer en betaal geen verzendkosten",
-      "shipping_free": "Gratis verzending"
+      "shipping_free": "Gratis verzending",
+      "total": "Totaalbedrag"
     },
     "label": {
       "price": "Prijs",
@@ -333,7 +334,15 @@
       "view_in_space": "Laat zien in jouw ruimte",
       "view_in_space_label": "Laat zien in jouw ruimte, laad product zien in augmented reality.",
       "description": "Product omschrijving",
-      "in_stock_label": ""
+      "in_stock_label": "",
+      "klaviyo_bis": {
+        "product_page_text": "Meld mij wanneer dit product beschikbaar is ",
+        "body_content": "Registreer om een notificatie te krijgen wanneer dit product weer op voorraad is.",
+        "email_field_label": "Email",
+        "button_label": "Breng me op de hoogte",
+        "subscription_success_label": "Gelukt! We laten je weten wanneer dit product weer beschikbaar is."
+      },
+      "bar_chart_title": "Padelcasa score"
     }
   },
   "gift_cards": {
