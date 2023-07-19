@@ -19,9 +19,13 @@
   {% endif %}
 {% endfor %}
 
+{% if cart.total_price < settings.cart_free_shipping_threshold %}
+  {% assign shipping_value = settings.cart_shipping_price %}
+{% endif %}
+
 <div class="cart__items"
   data-count="{{ cart.item_count }}"
-  data-cart-total="{{ cart.total_price | plus: total_savings }}"
+  data-cart-total="{{ cart.total_price | plus: shipping_value }}"
   data-cart-subtotal="{{ cart.total_price }}"
   data-cart-discount="{{- total_savings -}}">
   {% for item in cart.items %}

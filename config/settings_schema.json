@@ -892,6 +892,13 @@
         "type": "number",
         "label": "Free shipping threshold",
         "info": "Insert number with trailing zeros (e.g. 10000)"
+      },
+      {
+        "id": "cart_shipping_price",
+        "type": "number",
+        "label": "Shipping price",
+        "default": 695,
+        "info": "Insert number with trailing zeros (e.g. 10000)"
       }
     ]
   },

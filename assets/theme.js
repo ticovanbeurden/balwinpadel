@@ -1661,10 +1661,10 @@ lazySizesConfig.expFactor = 4;
   }
 
   const updateProgressBar = (subtotal, progressBar, progressText, progressWrapper) => {
-    const treshHold = 7500;
+    const treshHold = theme.strings.cartShippingTreshold;
     let progress = (subtotal / treshHold) * 100;
     progress = progress > 100 ? 100 : progress;
-    progressText.innerHTML = theme.strings.cartShipping_treshold.replace('_amount_to_go_', theme.Currency.formatMoney(treshHold - subtotal, theme.moneyFormat));
+    progressText.innerHTML = theme.strings.cartShippingTresholdText.replace('_amount_to_go_', theme.Currency.formatMoney(treshHold - subtotal, theme.moneyFormat));
     progressBar.style.width = `${progress}%`;
     progressWrapper.classList[progress === 100 ? 'add' : 'remove']('free-shipping');
   }
@@ -1685,6 +1685,7 @@ lazySizesConfig.expFactor = 4;
       discount: '[data-discount]',
       discountWrapper : '[data-discount-wrapper]',
       shippingProgress: '[data-shipping-progress]',
+      shippingPrice: '[data-shipping-price]',
       shippingWrapper: '[data-shipping-wrapper]',
       shippingText: '[data-shipping-text]',
       cartBubble: '.cart-link__bubble',
@@ -1720,6 +1721,7 @@ lazySizesConfig.expFactor = 4;
       this.discount = form.querySelector(selectors.discount);
       this.discountWrapper = form.querySelector(selectors.discountWrapper);
       this.shippingProgress = form.querySelector(selectors.shippingProgress);
+      this.shippingPrice = form.querySelector(selectors.shippingPrice);
       this.shippingWrapper = form.querySelector(selectors.shippingWrapper);
       this.shippingText = form.querySelector(selectors.shippingText);
       this.termsCheckbox = form.querySelector(selectors.termsCheckbox);
@@ -1818,6 +1820,13 @@ lazySizesConfig.expFactor = 4;
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
   
         if (count > 0 && this.shippingProgress) updateProgressBar(subtotal, this.shippingProgress, this.shippingText, this.shippingWrapper);
+
+        // Update shipping price
+        if (parseInt(subtotal,10) >= theme.strings.cartShippingTreshold) {
+          this.shippingPrice.innerHTML = theme.strings.cartShippingFreeText;
+        } else {
+          this.shippingPrice.innerHTML = theme.strings.cartShippingPrice;
+        }
 
         // Update discounts
         this.discount.innerHTML = theme.Currency.formatMoney(discount, theme.settings.moneyFormat);

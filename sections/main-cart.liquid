@@ -52,24 +52,37 @@
                 assign total_discount = total_discount | plus: discount
               endif
             endfor
-            assign cart_total = cart.total_price | plus: total_discount
-          -%}
 
-          <div class="cart__item-sub cart__item-row">
-            <div>{{ 'cart.general.total' | t }}</div>
-            <div data-total>{{ cart_total | money }}</div>
-          </div>
-          
-          <div data-discount-wrapper class="cart__item-sub cart__item-row cart__items-total-discount {% if total_discount == 0 %} cart__items-total-discount--hidden {% endif %}">
-            <div >{{ 'cart.general.discount_total' | t }}</div>
-            <div data-discount>{{- total_discount | money -}}</div>
-          </div>
+            if cart.total_price > settings.cart_free_shipping_threshold
+              assign shipping_value = 'cart.general.shipping_free' | t
+              assign cart_total = cart.total_price
+            else 
+              assign shipping_value = settings.cart_shipping_price
+              assign cart_total = cart.total_price | plus : shipping_value 
+            endif
+          -%}
 
           <div class="cart__item-sub cart__item-row">
             <div>{{ 'cart.general.subtotal' | t }}</div>
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
 
+          <div class="cart__item-sub cart__item-row">
+            <div>{{ 'cart.general.shipping' | t }}</div>
+            <div data-shipping-price>{{- shipping_value -}}</div>
+          </div>
+          
+          <div style='border-top: 1px solid black; padding-top: 10px;' class="cart__item-sub cart__item-row tw-pt-2.5">
+            <div>{{ 'cart.general.total' | t }}</div>
+            <div data-total>{{ cart_total | money }}</div>
+          </div>
+          
+          <div data-discount-wrapper class="cart__item-sub !tw-mb-0 cart__item-row cart__items-total-discount {% if total_discount == 0 %} cart__items-total-discount--hidden {% endif %}">
+            <div >{{ 'cart.general.discount_total' | t }}</div>
+            <div data-discount>{{- total_discount | money -}}</div>
+          </div>
+
+          <p class='tw-text-xs tw-opacity-75'>{{- 'cart.general.discount_note' | t -}}</p>
 
           {% if settings.cart_terms_conditions_enable %}
             <div class="cart__item-row cart__terms">

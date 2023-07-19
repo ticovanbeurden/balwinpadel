@@ -122,6 +122,7 @@
       "remove": "Verwijder",
       "note": "Opmerking bij bestelling",
       "subtotal": "Subtotaal",
+      "shipping": "Verzending",
       "discounts": "Kortingen",
       "shipping_at_checkout": "Voor 23:00 besteld, morgen in huis",
       "update": "Winkelmandje bijwerken",
@@ -135,6 +136,7 @@
       "terms_html": "Ik ga akkoord met de <a href='{{ url }}' target='_blank'>Algemene voorwaarden<\/a>",
       "terms_confirm": "U moet akkoord gaan met de algemene voorwaarden om door te gaan.",
       "discount_total": "Bespaar nu",
+      "discount_note": "Vergeleken met de adviesprijs",
       "shipping_treshold": "Besteed {{ amount_to_go }} meer en betaal geen verzendkosten",
       "shipping_free": "Gratis verzending",
       "total": "Totaalbedrag"
