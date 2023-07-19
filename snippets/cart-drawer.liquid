@@ -50,25 +50,37 @@
                 assign total_discount = total_discount | plus: discount
               endif
             endfor
+
+            if cart.total_price > settings.cart_free_shipping_threshold
+              assign shipping_value = 'cart.general.shipping_free' | t
+            else 
+              assign shipping_value = settings.cart_shipping_price
+              assign total_price = cart.total_price | plus : shipping_value 
+            endif
           -%}
-
-          {%- assign cart_total = cart.total_price | plus: total_discount -%}
-
-          <div class="cart__item-sub cart__item-row">
-            <div class="ajaxcart__subtotal">{{ 'cart.general.total' | t }}</div>
-            <div data-total>{{ cart_total | money }}</div>
-          </div>
-
-
-          <div data-discount-wrapper class="cart__item-sub cart__item-row cart__items-total-discount {% if total_discount == 0 %} cart__items-total-discount--hidden {% endif %}">
-            <div class="ajaxcart__subtotal">{{ 'cart.general.discount_total' | t }}</div>
-            <div data-discount>{{- total_discount | money -}}</div>
-          </div>
 
           <div class="cart__item-sub cart__item-row">
             <div class="ajaxcart__subtotal">{{ 'cart.general.subtotal' | t }}</div>
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
+
+          <div class="cart__item-sub cart__item-row">
+            <div class="ajaxcart__subtotal">{{ 'cart.general.shipping' | t }}</div>
+            <div data-shipping-price>{{- shipping_value -}}</div>
+          </div>
+
+          <div style='border-top: 1px solid var(--colorDrawerBorder);' class="cart__item-sub tw-pt-5 cart__item-row">
+            <div class="ajaxcart__subtotal">{{ 'cart.general.total' | t }}</div>
+            <div data-total>{{ total_price | money }}</div>
+          </div>
+
+          <div data-discount-wrapper class="cart__item-sub cart__item-row cart__items-total-discount tw-mb-0 {% if total_discount == 0 %} cart__items-total-discount--hidden {% endif %}">
+            <div class="ajaxcart__subtotal">{{ 'cart.general.discount_total' | t }}</div>
+            <div data-discount>{{- total_discount | money -}}</div>
+          </div>
+
+          <p class='tw-text-xs tw-opacity-75'>{{- 'cart.general.discount_note' | t -}}</p>
+
 
           <div class="cart__item-row cart__item--usp text-center">
             <img class="cart__item--check" loading=lazy width="10" height="10" src="{{ 'check-mark.png' | asset_img_url: 'icon' }}">
