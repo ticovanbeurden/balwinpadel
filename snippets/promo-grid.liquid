@@ -349,18 +349,34 @@
               {%- if block.settings.link -%}
                 <a href="{{ block.settings.link }}">
               {%- endif -%}
-                {%- if block.settings.image != blank -%}
-                  <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
-                    {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              {%- assign image = block.settings.image -%}
+              {%- assign image_desktop = block.settings.image_desktop | default: image -%}
+
+                {%- if image != blank or image_desktop != blank -%}
+                  <div class="image-wrap lg:tw-hidden" style="height: 0; padding-bottom: {{ 100 | divided_by: image.aspect_ratio }}%;">
+                    {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                     <img class="lazyload"
                         data-src="{{ img_url }}"
-                        data-widths="[360, 540, 720, 900, 1080, 1600]"
-                        data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                        data-widths="[360, 540, 720, 900]"
+                        data-aspectratio="{{ image.aspect_ratio }}"
                         data-sizes="auto"
                         role="presentation"
-                        alt="{{ block.settings.image.alt }}">
+                        alt="{{ image.alt }}">
                     <noscript>
-                      <img class="lazyloaded" src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt }}">
+                      <img class="lazyloaded" src="{{ image | img_url: '600x' }}" alt="{{ image.alt }}">
+                    </noscript>
+                  </div>
+                  <div class="image-wrap tw-hidden lg:tw-block" style="height: 0; padding-bottom: {{ 100 | divided_by: image_desktop.aspect_ratio }}%;">
+                    {%- assign img_url = image_desktop | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload"
+                        data-src="{{ img_url }}"
+                        data-widths="[360, 540, 720, 900]"
+                        data-aspectratio="{{ image_desktop.aspect_ratio }}"
+                        data-sizes="auto"
+                        role="presentation"
+                        alt="{{ image_desktop.alt }}">
+                    <noscript>
+                      <img class="lazyloaded" src="{{ image_desktop | img_url: '600x' }}" alt="{{ image_desktop.alt }}">
                     </noscript>
                   </div>
                 {%- else -%}
