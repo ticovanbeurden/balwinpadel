@@ -74,7 +74,7 @@
           
           <div style='border-top: 1px solid black; padding-top: 10px;' class="cart__item-sub cart__item-row tw-pt-2.5">
             <div>{{ 'cart.general.total' | t }}</div>
-            <div data-total>{{ cart_total | money }}</div>
+            <div class='tw-font-bold' data-total>{{ cart_total | money }}</div>
           </div>
           
           <div data-discount-wrapper class="cart__item-sub !tw-mb-0 cart__item-row cart__items-total-discount {% if total_discount == 0 %} cart__items-total-discount--hidden {% endif %}">
