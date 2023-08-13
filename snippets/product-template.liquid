@@ -183,6 +183,23 @@
                         {%- render 'tab', id: tab_id, title: block.settings.title, content: tab_content -%}
                       </div>
                     {% endunless %}
+                  {%- when 'tab_image' -%}
+                    {% assign tab_id = block.id | append: product.id %}
+                    {%- if block.settings.image -%}
+                      {% capture tab_content %}
+                      {% render 'image-element'
+                        img: block.settings.image,
+                        img_width: 1200,
+                        alt: block.settings.image.alt,
+                        sizes: '100%'
+                      %}
+                      {% endcapture %}
+                      {% unless tab_content == blank and block.settings.title == blank %}
+                        <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
+                          {%- render 'tab', id: tab_id, title: block.settings.title, content: tab_content -%}
+                        </div>
+                      {% endunless %}
+                    {%- endif -%}
                   {%- when 'contact' -%}
                     <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
                       {% assign tab_id = block.id | append: product.id %}
