@@ -42,21 +42,20 @@
       </label>
     </li>
     <li class="tag">
-      <label class="tag__checkbox-wrapper tw-relative tw-aspect-square lg:tw-aspect-video text-label tw-w-full tw-transition-all hover:tw-bg-opacity-90 tw-cursor-pointer tw-text-white tw-uppercase tw-flex tw-items-center tw-justify-center">
+      <label class="tag__checkbox-wrapper tw-flex-col tw-relative tw-aspect-square lg:tw-aspect-video text-label tw-w-full tw-transition-all hover:tw-bg-opacity-90 tw-cursor-pointer tw-text-black tw-uppercase tw-flex tw-items-center tw-justify-center">
         {%- render 'image-element'
           img: filter.settings.image,
           img_width: 500,
-          classes: 'tw-absolute tw-w-full tw-h-full tw-object-cover tw-object-center tw-inset-0',
+          classes: 'tw-w-full tw-h-full',
           sizes: '100%'
         -%}
-        <div class='tw-bg-black/30 tw-absolute tw-w-full tw-h-full tw-inset-0'></div>
         <input
         type="checkbox"
         class="tag__input dummy-checkbox"
         name="filter.v.price.lte"
         value="{{- maxRange -}}">
         <span class="tag__checkbox tw-hidden"></span>
-          <span class="tag__text tw-z-10 tw-text-center">{{ label }}</span>
+        <span style='box-shadow: 0 0 1px rgba(0,0,0,0.2)' class="tw-text-black tw-z-10 tw-text-center tw-border tw-w-full">{{ label }}</span>
       </label>
     </li>
   </form>
