@@ -16,8 +16,9 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/ZOMERDEALS.jpg",
-            "link": "shopify:\/\/collections\/padel-racket-sale",
-            "width": "100"
+            "image_desktop": "{{ collection.metafields.banner.image.value }}",
+            "link": "{{ collection.metafields.banner.link.value }}",
+            "width": "50"
           }
         }
       },
@@ -36,8 +37,9 @@
       "blocks": {
         "subcollections": {
           "type": "subcollections",
+          "disabled": true,
           "settings": {
-            "subcollections_per_row": 4
+            "subcollections_per_row": 5
           }
         },
         "product_grid": {

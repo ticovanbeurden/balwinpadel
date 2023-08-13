@@ -62,7 +62,10 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
       searchPages: {{ 'general.search.pages' | t | json }},
       searchArticles: {{ 'general.search.articles' | t | json }},
       productFrom: {{ 'products.general.from_text_html' | t: price: '' | json }},
-      cartShippingTresholdText: {{- 'cart.general.shipping_treshold' | t: amount_to_go: '_amount_to_go_' | json -}}
+      cartShippingTresholdText: {{- 'cart.general.shipping_treshold' | t: amount_to_go: '_amount_to_go_' | json -}},
+      cartShippingTreshold: {{ settings.cart_free_shipping_threshold | json }},
+      cartShippingPrice: "{{ settings.cart_shipping_price | money }}",
+      cartShippingFreeText: "{{- 'cart.general.shipping_free' | t -}}"
     };
     theme.settings = {
       cartType: {{ settings.cart_type | json }},
@@ -90,7 +93,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   {%- endif -%}
 
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-  <script src="//cdn.codeblackbelt.com/js/modules/frequently-bought-together/main.min.js?shop=padelcasawebshop.myshopify.com" defer></script>
+  
 
   {%- if request.page_type contains 'customers/' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
