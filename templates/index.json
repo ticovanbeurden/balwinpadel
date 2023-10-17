@@ -7,18 +7,18 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "DE JUISTE KEUZE VOOR PADEL",
-            "title_size": 55,
+            "title": "ONZE STOPTOBER DEALS ZIJN LIVE!",
+            "title_size": 48,
             "subheading": "",
             "link": "shopify:\/\/collections\/padel-rackets",
-            "link_text": "shop nu",
+            "link_text": "ALLE RACKETS",
             "link_2": "shopify:\/\/collections\/padel-racket-sale",
-            "link_text_2": "zomerdeals",
+            "link_text_2": "DEALS",
             "color_accent": "#2f7543",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/brian-patrick-tagalog-qNEv1SVkOnk-unsplash_1_cd68a1f2-644a-45b8-9b5a-61f7a2c67cdf.png",
             "parallax_direction": "left",
-            "overlay_opacity": 0,
+            "overlay_opacity": 54,
             "focal_point": "bottom center"
           }
         },
@@ -168,7 +168,6 @@
     },
     "promo-grid": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "promo-0": {
           "type": "advanced",
@@ -217,6 +216,7 @@
         "promo-0",
         "promo-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 20,
@@ -226,7 +226,6 @@
     },
     "promo-grid2": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "promo2-0": {
           "type": "advanced",
@@ -283,6 +282,7 @@
         "promo2-1",
         "promo2-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "gutter_size": 20,
@@ -362,7 +362,6 @@
     },
     "featured-collections": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "featured-collections-0": {
           "type": "collection",
@@ -413,6 +412,7 @@
         "featured-collections-3",
         "c2714005-6315-4ffb-8f0d-f1608c82e13f"
       ],
+      "disabled": true,
       "settings": {
         "title": "CATEGORIEËN",
         "divider": false,

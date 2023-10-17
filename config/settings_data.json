@@ -482,7 +482,6 @@
       },
       "1595517358778": {
         "type": "promo-grid",
-        "disabled": true,
         "blocks": {
           "1595517358778-0": {
             "type": "simple",
@@ -513,6 +512,7 @@
           "1595517358778-0",
           "1595517358778-1"
         ],
+        "disabled": true,
         "settings": {
           "full_width": false,
           "gutter_size": 20,

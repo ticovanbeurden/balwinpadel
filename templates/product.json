@@ -43,7 +43,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "checkmark",
-            "text": "100% laagste prijs garantie"
+            "text": "Altijd een lage prijs"
           }
         },
         "88255b20-f1bb-4380-916a-5cf67b285057": {
@@ -210,7 +210,6 @@
     },
     "testimonials": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "testimonials-0": {
           "type": "testimonial",
@@ -245,6 +244,7 @@
         "testimonials-1",
         "testimonials-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "Testimonials",
         "align_text": "center",

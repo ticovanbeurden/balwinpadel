@@ -15,7 +15,7 @@
         "5719afd0-ada4-46b0-9e1d-9a8c2ebac5b8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ZOMERDEALS.jpg",
+            "image": "{{ collection.metafields.banner.image_desktop.value }}",
             "image_desktop": "{{ collection.metafields.banner.image.value }}",
             "link": "{{ collection.metafields.banner.link.value }}",
             "width": "50"
@@ -103,7 +103,6 @@
     },
     "9341c3d2-6ed2-47e9-825a-71b78acb15f4": {
       "type": "featured-collections",
-      "disabled": true,
       "blocks": {
         "template--17518194327832__9341c3d2-6ed2-47e9-825a-71b78acb15f4-1673361326511c9172-0": {
           "type": "collection",
@@ -144,6 +143,7 @@
         "template--17518194327832__9341c3d2-6ed2-47e9-825a-71b78acb15f4-1673361326511c9172-2",
         "template--17518194327832__9341c3d2-6ed2-47e9-825a-71b78acb15f4-1673361326511c9172-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "Collection list",
         "divider": false,
