@@ -831,6 +831,15 @@
         "content": "t:settings_schema.cart.settings.header_cart"
       },
       {
+        "type": "header",
+        "content": "Cart upsell"
+      },
+      {
+        "type": "collection",
+        "id": "cart_upsell",
+        "label": "Cart upsell"
+      },
+      {
         "type": "select",
         "id": "cart_type",
         "label": "t:settings_schema.cart.settings.cart_type.label",

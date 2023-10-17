@@ -19,6 +19,18 @@
           {% for item in cart.items %}
             {%- render 'cart-item', product: item -%}
           {%- endfor -%}
+          {%- if settings.cart_upsell -%}
+            {%- for product in settings.cart_upsell.products -%}
+              {%- assign skip_product = false -%}
+              {%- for cart_item in cart.items -%}
+                {%- if cart_item.id == product.id -%}
+                  {%- assign skip_product = true -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- unless skip_product -%}
+              {%- endunless -%}
+            {%- endfor -%}
+          {%- endif -%}
         </div>
         <div class="cart__page-col">
           {% if settings.cart_notes_enable %}
