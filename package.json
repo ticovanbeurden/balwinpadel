@@ -1,23 +1,19 @@
 {
-  "name": "padelcasa",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "with-tailwind",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "build": "npx tailwindcss build src/css/application.css -o assets/application.css.liquid",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "adastra dev -s padelcasawebshop.myshopify.com",
+    "build": "adastra build",
+    "preview": "adastra preview",
+    "check": "adastra check"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ticovanbeurden/padelcasa.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ticovanbeurden/padelcasa/issues"
-  },
-  "homepage": "https://github.com/ticovanbeurden/padelcasa#readme",
-  "dependencies": {
-    "tailwindcss": "^3.2.4"
+  "devDependencies": {
+    "adastra-cli": "latest",
+    "adastra-plugin": "latest",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.4"
   }
 }
