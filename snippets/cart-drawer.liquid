@@ -49,17 +49,17 @@
                     <a class='tw-block tw-mb-1.5' href='{{ product.url }}'>{{ product.title }}</a>
                     <div class='tw-flex tw-flex-row tw-items-center tw-mb-2'>
                       {%- if product.compare_at_price > product.price -%}
-                        <small class="cart__price cart__price--strikethrough tw-mr-1">
+                        <small class="cart__price cart__discount cart__price--strikethrough tw-mr-1">
                           {{ product.compare_at_price | money }}
                         </small>
                       {%- endif -%}
-                      <span class="cart__price cart__discount">
+                      <span class="cart__price">
                         {{ product.price | money }}
                       </span>
                     </div>
                     <input data-variant-id value='{{- product.selected_or_first_available_variant.id -}}' hidden  >
-                    <a data-add-to-cart class='add-to-cart tw-cursor-pointer  tw-flex tw-justify-center tw-items-center tw-p-1 btn--secondary tw-mt-auto'>
-                      Add
+                    <a data-add-to-cart class='add-to-cart tw-cursor-pointer tw-text-center tw-text-xs lg:tw-text-base tw-flex tw-justify-center tw-items-center tw-p-1 btn--secondary tw-mt-auto'>
+                      {{- settings.cart_atc_text -}}
                     </a>
                   </div>
                 </cart-upsell-item>

@@ -841,6 +841,12 @@
         "default": "You may also like"
       },
       {
+        "type": "text",
+        "id": "cart_atc_text",
+        "label": "Button text",
+        "default": "Voeg toe aan winkelmandje"
+      },
+      {
         "type": "collection",
         "id": "cart_upsell",
         "label": "Cart upsell"
