@@ -835,6 +835,12 @@
         "content": "Cart upsell"
       },
       {
+        "type": "text",
+        "id": "cart_upsell_title",
+        "label": "Title",
+        "default": "You may also like"
+      },
+      {
         "type": "collection",
         "id": "cart_upsell",
         "label": "Cart upsell"

@@ -1,3 +1,5 @@
-import ProductForm from '../product-form'
+import cartUpsellSlider from '../cart-upsell-slider'
+import cartUpsellItem from '../cart-upsell-item'
 
-window.customElements.define('product-form', ProductForm)
+window.customElements.define('cart-upsell-slider', cartUpsellSlider)
+window.customElements.define('cart-upsell-item', cartUpsellItem)
