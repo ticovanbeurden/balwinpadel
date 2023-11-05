@@ -15,7 +15,7 @@
   {%- if cart.item_count > 0 -%}
     <form action="{{ routes.cart_url }}" method="post" novalidate data-location="page" id="CartPageForm">
       <div class="cart__page">
-        <div data-products class="cart__page-col">
+        <div data-products class="cart__page-col tw-overflow-hidden">
           {% for item in cart.items %}
             {%- render 'cart-item', product: item -%}
           {%- endfor -%}
@@ -142,6 +142,53 @@
         </div>
       </div>
     </form>
+    {%- if settings.cart_upsell -%}
+      <cart-upsell-slider class='tw-w-full tw-block lg:tw-w-[65%] lg:tw-pr-[100px]'>
+        <h4 class='tw-uppercase tw-mt-4 tw-text-center'>{{- settings.cart_upsell_title -}}</h4>
+        <div data-upsell-slider class='keen-slider'>
+        <button type="button" data-prev class="tw-absolute tw-left-0 lg:tw-left-6 tw-top-1/2 tw-translatey-y-1/2 tw-z-10">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+        </button>
+          <button type="button" data-next class="tw-absolute tw-right-0 lg:tw-right-6 tw-top-1/2 tw-translatey-y-1/2 tw-z-10">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+          </button>
+      {%- for product in settings.cart_upsell.products -%}
+        {%- assign skip_product = false -%}
+        {%- for cart_item in cart.items -%}
+          {%- if cart_item.id == product.id -%}
+            {%- assign skip_product = true -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- unless skip_product or product.selected_or_first_available_variant.available == false -%}
+          <cart-upsell-item class='keen-slider__slide tw-flex tw-justify-center'>
+            <div class='tw-justify-center tw-max-w-lg tw-w-full tw-p-2 tw-flex tw-flex-row'>
+              <a class='tw-block tw-mr-2' href='{{ product.url }}'>
+                {{- product.featured_image | image_url: width: 150 | image_tag -}}
+              </a>
+              <div data-form class='tw-flex tw-flex-col tw-flex-1'>
+                <a class='tw-block tw-mb-1.5' href='{{ product.url }}'>{{ product.title }}</a>
+                <div class='tw-flex tw-flex-row tw-items-center tw-mb-2'>
+                  {%- if product.compare_at_price > product.price -%}
+                    <small class="cart__price cart__price--strikethrough tw-mr-1">
+                      {{ product.compare_at_price | money }}
+                    </small>
+                  {%- endif -%}
+                  <span class="cart__price cart__discount">
+                    {{ product.price | money }}
+                  </span>
+                </div>
+                <input data-variant-id value='{{- product.selected_or_first_available_variant.id -}}' hidden  >
+                <a type='submit' data-add-to-cart class='add-to-cart tw-cursor-pointer  tw-flex tw-justify-center tw-items-center tw-p-1 btn--secondary tw-mt-auto'>
+                  Add
+                </a>
+              </div>
+            </div>
+          </cart-upsell-item>
+          {%- endunless -%}
+        {%- endfor -%}
+        </div>
+      </cart-upsell-slider>
+    {%- endif -%}
   {%- endif -%}
 </div>
 

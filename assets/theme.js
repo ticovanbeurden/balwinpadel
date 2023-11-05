@@ -2356,6 +2356,7 @@ lazySizesConfig.expFactor = 4;
   
         theme.utils.prepareTransition(this.drawer, function() {
           this.drawer.classList.add(this.config.activeDrawer);
+          document.dispatchEvent(new CustomEvent('cart-upsell:update'));
         }.bind(this));
   
         document.documentElement.classList.add(this.config.openClass);
@@ -2390,6 +2391,7 @@ lazySizesConfig.expFactor = 4;
         document.activeElement.blur();
   
         theme.utils.prepareTransition(this.drawer, function() {
+          document.dispatchEvent(new CustomEvent('cart-upsell:update'));
           this.drawer.classList.remove(this.config.activeDrawer);
         }.bind(this));
   
@@ -4215,6 +4217,9 @@ lazySizesConfig.expFactor = 4;
   
       open: function() {
         this.drawer.open();
+        setTimeout(() => {
+          document.dispatchEvent(new CustomEvent('cart-upsell:update'));
+        }, 500);
       },
   
       close: function() {
