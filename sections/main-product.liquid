@@ -314,6 +314,22 @@
   "settings": [
     {
       "type": "select",
+      "id": "icon_type",
+      "label": "Icon type",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default theme icon"
+        },
+        {
+          "value": "custom",
+          "label": "Custom icon"
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "select",
       "id": "icon",
       "label": "t:product_block.sales_point.settings.icon.label",
       "default": "globe",
@@ -369,10 +385,21 @@
       ]
     },
     {
-      "type": "text",
+      "type": "image_picker",
+      "id": "custom_icon",
+      "label": "Custom icon"
+    },
+    {
+      "type": "inline_richtext",
       "id": "text",
       "label": "t:product_block.sales_point.settings.text.label",
       "default": "Free worldwide shipping"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Text color",
+      "default": "#000"
     }
   ]
 },
