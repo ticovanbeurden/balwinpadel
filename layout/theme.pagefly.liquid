@@ -31,7 +31,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
   {%- render 'font-face' -%}
   {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
-  {{ "application.css" | asset_url | stylesheet_tag }}
   {%- render 'css-variables' -%}
 
   <script>
@@ -85,6 +84,12 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   </script>
 
   {{ content_for_header }}
+
+  {% liquid
+    # Always add entrypoint below content_for_header
+    render 'adastra' with 'base.css'
+    render 'adastra' with 'index.js'
+  %}
 
   <script src="{{ 'vendor-scripts-v11.js' | asset_url | split: '?' | first }}" defer="defer"></script>
 

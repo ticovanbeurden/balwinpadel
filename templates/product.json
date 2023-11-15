@@ -35,29 +35,37 @@
         "6373a12d-c3ba-493f-9427-7333c08d4d92": {
           "type": "sales_point",
           "settings": {
+            "icon_type": "default",
             "icon": "truck",
-            "text": "Vòòr 23:00 besteld, morgen in huis"
+            "text": "Vòòr 23:00 besteld, morgen in huis",
+            "color": "#000000"
           }
         },
         "sales_point": {
           "type": "sales_point",
           "settings": {
+            "icon_type": "default",
             "icon": "checkmark",
-            "text": "Altijd een lage prijs"
+            "text": "Altijd een lage prijs",
+            "color": "#000000"
           }
         },
         "88255b20-f1bb-4380-916a-5cf67b285057": {
           "type": "sales_point",
           "settings": {
+            "icon_type": "default",
             "icon": "heart",
-            "text": "Retourneren binnen 14 dagen"
+            "text": "Retourneren binnen 14 dagen",
+            "color": "#070b35"
           }
         },
         "1f15a253-6e72-4c5f-b4f6-8342bccf3199": {
           "type": "sales_point",
           "settings": {
+            "icon_type": "default",
             "icon": "package",
-            "text": "Vanaf €75 - gratis verzending"
+            "text": "Vanaf €75 - gratis verzending",
+            "color": "#000000"
           }
         },
         "inventory_status": {
@@ -96,7 +104,7 @@
         "tab": {
           "type": "tab",
           "settings": {
-            "title": "Hoe Padelcasa haar rackets beoordeeld:",
+            "title": "Hoe Padelcasa haar rackets beoordeelt:",
             "content": "<p>PadelCasa heeft een racket test centrum in Amsterdam. De cijfers worden gebaseerd op de expertise en meningen van padel trainers, waaronder Sandy Farquharson van The Padel School.<\/p><p>WAT BETEKENEN DE VERSCHILLENDE CIJFERS?<\/p><p><br\/><strong>KRACHT:<\/strong><\/p><p>Hoe hoger dit cijfer is, hoe meer kracht het racket genereert.<\/p><p><strong>CONTROLE:<\/strong><\/p><p>Hoe hoger dit cijfer, des te meer controle je ervaart.<\/p><p><strong>HANDELBAARHEID:<\/strong><\/p><p>Hoe hoger dit cijfer des te makkelijker het is om het racket te handelen<\/p><p><strong>SWEETSPOT:<\/strong><\/p><p>Hoe hoger het cijfer is, hoe groter de sweetspot is. Dit betekent dat je de bal sneller goed raakt.<\/p>",
             "page": ""
           }

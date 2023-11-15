@@ -65,6 +65,8 @@
     "collection_grid_tint": "#000000",
     "collection_grid_opacity": 10,
     "collection_grid_gutter": true,
+    "cart_upsell_title": "PERFECT OM MEE TE NEMEN",
+    "cart_upsell": "padel-accessoires",
     "cart_type": "drawer",
     "cart_icon": "cart",
     "cart_additional_buttons": false,
