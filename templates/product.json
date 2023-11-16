@@ -32,40 +32,44 @@
             "color_swatches": false
           }
         },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon_type": "custom",
+            "icon": "checkmark",
+            "custom_icon": "shopify:\/\/shop_images\/check.png",
+            "text": "Gratis Padel Grip Gel t.w.v €9,95 <strong>bij<\/strong> <strong>elke bestelling<\/strong>",
+            "color": "#070b35"
+          }
+        },
         "6373a12d-c3ba-493f-9427-7333c08d4d92": {
           "type": "sales_point",
           "settings": {
-            "icon_type": "default",
+            "icon_type": "custom",
             "icon": "truck",
+            "custom_icon": "shopify:\/\/shop_images\/check.png",
             "text": "Vòòr 23:00 besteld, morgen in huis",
             "color": "#000000"
           }
         },
-        "sales_point": {
+        "1f15a253-6e72-4c5f-b4f6-8342bccf3199": {
           "type": "sales_point",
           "settings": {
-            "icon_type": "default",
-            "icon": "checkmark",
-            "text": "Altijd een lage prijs",
+            "icon_type": "custom",
+            "icon": "package",
+            "custom_icon": "shopify:\/\/shop_images\/check.png",
+            "text": "Vanaf €75 - gratis verzending",
             "color": "#000000"
           }
         },
         "88255b20-f1bb-4380-916a-5cf67b285057": {
           "type": "sales_point",
           "settings": {
-            "icon_type": "default",
+            "icon_type": "custom",
             "icon": "heart",
-            "text": "Retourneren binnen 14 dagen",
+            "custom_icon": "shopify:\/\/shop_images\/check.png",
+            "text": "Binnen 14 dagen gratis retourneren",
             "color": "#070b35"
-          }
-        },
-        "1f15a253-6e72-4c5f-b4f6-8342bccf3199": {
-          "type": "sales_point",
-          "settings": {
-            "icon_type": "default",
-            "icon": "package",
-            "text": "Vanaf €75 - gratis verzending",
-            "color": "#000000"
           }
         },
         "inventory_status": {
@@ -134,10 +138,10 @@
         "cffd8cbc-7721-4717-adde-17729f5fdd31",
         "separator",
         "variant_picker",
-        "6373a12d-c3ba-493f-9427-7333c08d4d92",
         "sales_point",
-        "88255b20-f1bb-4380-916a-5cf67b285057",
+        "6373a12d-c3ba-493f-9427-7333c08d4d92",
         "1f15a253-6e72-4c5f-b4f6-8342bccf3199",
+        "88255b20-f1bb-4380-916a-5cf67b285057",
         "inventory_status",
         "buy_buttons",
         "cc09cf59-f52c-472c-a24f-c8977523aed7",

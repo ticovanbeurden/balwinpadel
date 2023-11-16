@@ -14,7 +14,7 @@
     "color_header": "#ffffff",
     "color_header_text": "#070b35",
     "color_announcement": "#ffffff",
-    "color_announcement_text": "#2f7543",
+    "color_announcement_text": "#ff1616",
     "color_footer": "#ffffff",
     "color_footer_text": "#070b35",
     "color_drawer_background": "#ffffff",
@@ -143,8 +143,17 @@
               "mobile_logo_width": 110
             }
           },
+          "c3896eec-3549-45c1-a3e0-b478020934db": {
+            "type": "announcement",
+            "settings": {
+              "text": "GRATIS PADEL GRIP GEL T.W.V €9,95 BIJ ELKE BESTELLING",
+              "link_text": "",
+              "link": "https:\/\/www.padelcasa.com\/collections\/padel-racket-sale"
+            }
+          },
           "1524770292306": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "voor 23:00 besteld, morgen in huis!",
               "link_text": "",
@@ -154,6 +163,7 @@
         },
         "block_order": [
           "1524770014057",
+          "c3896eec-3549-45c1-a3e0-b478020934db",
           "1524770292306"
         ],
         "settings": {
