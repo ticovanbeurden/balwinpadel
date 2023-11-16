@@ -61,11 +61,18 @@ Arguments
           {{ 'products.product.sold_out' | t }}
         </div>
       {%- endunless -%}
-      {%- if on_sale and product.available -%}
-        <div class="grid-product__tag grid-product__tag--sale">
-          {{ 'products.general.sale' | t }}
-        </div>
-      {%- endif -%}
+      <div class='tw-absolute tw-pointer-events-none tw-top-0 tw-right-0 tw-z-[2] tw-gap-y-1 tw-flex tw-flex-col tw-items-end'>
+        {%- if on_sale and product.available -%}
+          <div class="grid-product__tag grid-product__tag--sale">
+            {{ 'products.general.sale' | t }}
+          </div>
+        {%- endif -%}
+        {%- for label in product.metafields.item.labels.value -%}
+          <div style='--tag-background-color: {{ label.background_color }}; --tag-text-color: {{ label.text_color }}' class='grid-product__tag tw-text-[var(--tag-text-color)] tw-bg-[var(--tag-background-color)]'>
+            {{- label.text -}}
+          </div>
+        {%- endfor -%}
+      </div>
     {%- endif -%}
 
     {%- liquid
