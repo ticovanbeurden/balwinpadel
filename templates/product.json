@@ -32,23 +32,13 @@
             "color_swatches": false
           }
         },
-        "sales_point": {
-          "type": "sales_point",
-          "settings": {
-            "icon_type": "custom",
-            "icon": "checkmark",
-            "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "Gratis Padel Grip Gel t.w.v €9,95 <strong>bij<\/strong> <strong>elke bestelling<\/strong>",
-            "color": "#070b35"
-          }
-        },
         "6373a12d-c3ba-493f-9427-7333c08d4d92": {
           "type": "sales_point",
           "settings": {
             "icon_type": "custom",
             "icon": "truck",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "Vòòr 23:00 besteld, morgen in huis",
+            "text": "<strong>Vòòr 23:00 besteld, morgen thuis<\/strong>",
             "color": "#000000"
           }
         },
@@ -58,7 +48,7 @@
             "icon_type": "custom",
             "icon": "package",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "Vanaf €75 - gratis verzending",
+            "text": "<strong>Vanaf €75 - gratis verzending<\/strong>",
             "color": "#000000"
           }
         },
@@ -68,7 +58,17 @@
             "icon_type": "custom",
             "icon": "heart",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "Binnen 14 dagen gratis retourneren",
+            "text": "<strong>Binnen 14 dagen gratis retourneren<\/strong>",
+            "color": "#070b35"
+          }
+        },
+        "4e2b48a4-2bdb-4017-9bf2-c4cbdd46324d": {
+          "type": "sales_point",
+          "settings": {
+            "icon_type": "custom",
+            "icon": "heart",
+            "custom_icon": "shopify:\/\/shop_images\/check.png",
+            "text": "<strong>4.9\/5.0 klant beoordeling<\/strong>",
             "color": "#070b35"
           }
         },
@@ -138,10 +138,10 @@
         "cffd8cbc-7721-4717-adde-17729f5fdd31",
         "separator",
         "variant_picker",
-        "sales_point",
         "6373a12d-c3ba-493f-9427-7333c08d4d92",
         "1f15a253-6e72-4c5f-b4f6-8342bccf3199",
         "88255b20-f1bb-4380-916a-5cf67b285057",
+        "4e2b48a4-2bdb-4017-9bf2-c4cbdd46324d",
         "inventory_status",
         "buy_buttons",
         "cc09cf59-f52c-472c-a24f-c8977523aed7",
