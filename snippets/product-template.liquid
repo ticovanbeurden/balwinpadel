@@ -123,7 +123,7 @@
                   {%- if product.metafields.info.brand -%}
                     {%- liquid 
                       assign brand = product.metafields.info.brand.value
-                      if brand.links
+                      if brand.link
                         assign tag = 'a'
                         assign href = brand.link
                       else
@@ -131,9 +131,11 @@
                         assign href = ''
                       endif
                     -%}
-                    <{{ tag }} class='tw-block' href="{{ href }}">
-                      {{ brand.logo | image_url: width: 100 | image_tag }}
-                    </{{ tag }}>
+                    {%- if brand.logo -%}
+                      <{{ tag }} class='tw-block' href="{{ href }}">
+                        {{ brand.logo | image_url: width: 100 | image_tag }}
+                      </{{ tag }}>
+                    {%- endif -%}
                   {%- endif -%}
                 </div>
               {%- endif -%}
