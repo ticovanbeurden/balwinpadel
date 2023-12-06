@@ -118,11 +118,25 @@
           <div class="product-single__meta">
             <div class="product-block product-block--header">
               {%- if settings.show_breadcrumbs and isModal != true -%}
-                <div class='product-block--header--desktop'>
+                <div class='product-block--header--desktop tw-flex tw-flex-col lg:tw-justify-between tw-mb-2 lg:tw-mb-0 lg:tw-flex-row'>
                   {%- render 'breadcrumbs' -%}
+                  {%- if product.metafields.info.brand -%}
+                    {%- liquid 
+                      assign brand = product.metafields.info.brand.value
+                      if brand.links
+                        assign tag = 'a'
+                        assign href = brand.link
+                      else
+                        assign tag = 'span'
+                        assign href = ''
+                      endif
+                    -%}
+                    <{{ tag }} class='tw-block' href="{{ href }}">
+                      {{ brand.logo | image_url: width: 100 | image_tag }}
+                    </{{ tag }}>
+                  {%- endif -%}
                 </div>
               {%- endif -%}
-
               {%- if settings.vendor_enable -%}
                 <div class="product-single__vendor">
                   {%- assign vendor_handle = product.vendor | handleize -%}
