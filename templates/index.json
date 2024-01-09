@@ -3,114 +3,49 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "32b4ab4e-df0c-4387-97b9-b4b5de5f7357": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "DE JUISTE KEUZE VOOR PADEL",
-            "title_size": 48,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/padel-rackets",
-            "link_text": "ALLE RACKETS",
-            "link_2": "shopify:\/\/collections\/padel-racket-sale",
-            "link_text_2": "DEALS",
-            "color_accent": "#2f7543",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/brian-patrick-tagalog-qNEv1SVkOnk-unsplash_1_cd68a1f2-644a-45b8-9b5a-61f7a2c67cdf.png",
-            "parallax_direction": "left",
-            "overlay_opacity": 54,
-            "focal_point": "bottom center"
-          }
-        },
-        "slideshow-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "Padelcasa",
-            "title": "De padel specialist",
-            "title_size": 80,
-            "subheading": "Dat is pas winnen.",
-            "link": "shopify:\/\/collections\/padel-rackets",
-            "link_text": "Shop nu",
-            "link_2": "shopify:\/\/pages\/padel-racket-kopen-waar-op-letten",
-            "link_text_2": "keuzehulp",
-            "color_accent": "#e58951",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/padelcasa_achtergrond_homepage.png",
-            "image_mobile": "shopify:\/\/shop_images\/padelcasa_achtergrond_homepage.png",
-            "parallax_direction": "left",
-            "overlay_opacity": 0,
-            "focal_point": "20% 0"
-          }
-        },
-        "e6f265eb-a276-41c1-87df-eaa99f3ea8d3": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "Dát is pas winnen",
-            "title_size": 40,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/padel-rackets",
-            "link_text": "Shop nu",
-            "link_2": "shopify:\/\/pages\/padel-racket-kopen-waar-op-letten",
-            "link_text_2": "Keuzehulp",
-            "color_accent": "#a61a1a",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Website_fotos.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 40,
-            "focal_point": "top center"
-          }
-        },
-        "db2b036d-9744-49b1-aa51-bf2329ed07e3": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "TOT 75% KORTING",
-            "title": "",
-            "title_size": 42,
-            "subheading": "",
-            "link": "https:\/\/www.padelcasa.com\/collections\/padel-racket-sale",
-            "link_text": "+ gratis grip gel >>>",
-            "link_2": "https:\/\/www.padelcasa.com\/collections\/padel-racket-sale",
-            "link_text_2": "",
-            "color_accent": "#a90e0e",
-            "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/Untitled_design_85.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
         "428bd930-5351-4eb0-9105-8df381a64c6d": {
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "",
-            "title_size": 65,
+            "title": "DE JUISTE KEUZE VOOR PADEL",
+            "title_size": 60,
             "subheading": "",
             "link": "https:\/\/www.padelcasa.com\/collections\/padel-racket-sale",
             "link_text": "DEALS",
             "link_2": "shopify:\/\/collections\/padel-rackets",
             "link_text_2": "ALLE RACKETS",
-            "color_accent": "#cc0000",
-            "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/December_deals_3.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/December_deals_Instagram_Post_2.jpg",
+            "color_accent": "#2f7543",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/brian-patrick-tagalog-qNEv1SVkOnk-unsplash_copy_2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/brian-patrick-tagalog-qNEv1SVkOnk-unsplash_copy_2_ccdf7af8-6583-4ce3-be62-04e7e293bd2b.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
-            "focal_point": "top center"
+            "focal_point": "center center"
+          }
+        },
+        "95e02ebb-833e-49bd-bad8-cdc908aedb6d": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "MAAK JE OUTFIT AF",
+            "title_size": 60,
+            "subheading": "",
+            "link": "https:\/\/www.padelcasa.com\/collections\/padel-kettingen",
+            "link_text": "Kettingen",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#cc0000",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner_ai_is_geweldig.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "32b4ab4e-df0c-4387-97b9-b4b5de5f7357",
-        "slideshow-1",
-        "e6f265eb-a276-41c1-87df-eaa99f3ea8d3",
-        "db2b036d-9744-49b1-aa51-bf2329ed07e3",
-        "428bd930-5351-4eb0-9105-8df381a64c6d"
+        "428bd930-5351-4eb0-9105-8df381a64c6d",
+        "95e02ebb-833e-49bd-bad8-cdc908aedb6d"
       ],
       "settings": {
         "section_height": "450px",
