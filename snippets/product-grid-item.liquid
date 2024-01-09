@@ -85,7 +85,7 @@ Arguments
       assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
     -%}
 
-    <a href="{{ product.url | within: collection }}" class="grid-product__link">
+    <a href="{{ product.url | within: collection }}" class="grid-product__link relative">
       <div class="grid-product__image-mask">
         {%- if quick_shop_enable -%}
           {%- if settings.quick_shop_button == 'quick_shop' -%}
@@ -133,7 +133,14 @@ Arguments
             </noscript>
           </div>
         {%- endif -%}
-
+        {%- if product.metafields.info.brand -%}
+          {%- liquid 
+            assign brand = product.metafields.info.brand.value
+          -%}
+          <span class='tw-block tw-absolute tw-bottom-0 tw-z-[1] tw-left-0'>
+            {{ brand.logo | image_url: width: 75 | image_tag }}
+          </span>
+        {%- endif -%}
         {%- if settings.product_hover_image and product.media.size > 1 -%}
           {%- for media in product.media offset: 1 limit: 1 -%}
             {%- assign second_image = media.preview_image -%}

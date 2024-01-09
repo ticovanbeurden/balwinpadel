@@ -87,21 +87,21 @@
         "428bd930-5351-4eb0-9105-8df381a64c6d": {
           "type": "image",
           "settings": {
-            "top_subheading": "TOT 75% KORTING",
+            "top_subheading": "",
             "title": "",
-            "title_size": 80,
+            "title_size": 65,
             "subheading": "",
             "link": "https:\/\/www.padelcasa.com\/collections\/padel-racket-sale",
-            "link_text": "+ gratis grip gel",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#a90e0e",
+            "link_text": "DEALS",
+            "link_2": "shopify:\/\/collections\/padel-rackets",
+            "link_text_2": "ALLE RACKETS",
+            "color_accent": "#cc0000",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/Untitled_design_86.png",
-            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_87.png",
+            "image": "shopify:\/\/shop_images\/December_deals_3.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/December_deals_Instagram_Post_2.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
-            "focal_point": "center center"
+            "focal_point": "top center"
           }
         }
       },
@@ -322,11 +322,11 @@
     "1b4ff4f3-bf0d-49fd-930d-cb1702a5468e": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/3_6030ba6b-c965-4b1f-a167-9323b2c6ba6e.png",
+        "image": "shopify:\/\/shop_images\/ADIDAS_collectie.jpg",
         "image_width": 700,
         "subtitle": "Nieuw",
         "title": "Adidas RACKETS & TASSEN",
-        "text": "<p>De 2023 collectie van Adidas is erg breed, waardoor er voor iedere speler een perfect racket tussen zit. Of je nu op zoek bent naar power, comfort, controle of een balans tussen allen.<\/p>",
+        "text": "<p>De collectie van Adidas is gevarieerd en breed. Voor elk soort speler is er iets wat perfect aansluit op je spel. Of je nu op zoek bent naar power, comfort, controle of een balans tussen allen.<\/p>",
         "button_label": "bekijk de collectie",
         "button_link": "https:\/\/www.padelcasa.com\/collections\/adidas-padel-racket-kopen",
         "button_style": "primary",
@@ -338,7 +338,7 @@
     "0219e51a-bc74-4113-bc8a-811a6d174d01": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/5.png",
+        "image": "shopify:\/\/shop_images\/BABOLAT_collectie.jpg",
         "image_width": 700,
         "subtitle": "Nieuw",
         "title": "Babolat",
@@ -354,11 +354,11 @@
     "ea1447e4-f7c5-436e-9dfd-0577975f15c0": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/4_5e2cddd4-4d08-4ddb-9e7d-da339f79679c.png",
+        "image": "shopify:\/\/shop_images\/HEAD_collectie.jpg",
         "image_width": 700,
         "subtitle": "Nieuw",
         "title": "HEAD",
-        "text": "<p>Head is in 2023 weer verrijkt met nieuwe designs en geavanceerde technieken! bekijk snel de nieuwe collectie van Head!<\/p>",
+        "text": "<p>HEAD is en blijft innovatief in padel. Zo is de nieuwe lijn van HEAD van extreem hoge kwaliteit met uiteraard een prachtig design.<\/p>",
         "button_label": "Bekijk de collectie",
         "button_link": "shopify:\/\/collections\/head-padel-racket-kopen",
         "button_style": "primary",
