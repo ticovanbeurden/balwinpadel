@@ -36,6 +36,8 @@
           <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64"><path fill="none" d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"/><circle cx="27" cy="53" r="2"/><circle cx="47" cy="53" r="2"/></svg>
         {%- elsif settings.cart_icon == 'bag-minimal' -%}
           <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag-minimal" viewBox="0 0 64 64"><path stroke="null" id="svg_4" fill-opacity="null" stroke-opacity="null" fill="null" d="M11.375 17.863h41.25v36.75h-41.25z"/><path stroke="null" id="svg_2" d="M22.25 18c0-7.105 4.35-9 9.75-9s9.75 1.895 9.75 9"/></svg>
+        {%- elsif settings.cart_icon == 'custom' -%}
+          {{ settings.cart__icon__custom | image_url: width: 200 | image_tag: class: 'icon' }}
         {%- else -%}
           <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag" viewBox="0 0 64 64"><g fill="none" stroke="#000" stroke-width="2"><path d="M25 26c0-15.79 3.57-20 8-20s8 4.21 8 20"/><path d="M14.74 18h36.51l3.59 36.73h-43.7z"/></g></svg>
         {%- endif -%}
