@@ -513,7 +513,7 @@
                                     {{ block.settings.custom_icon | image_url: width: 50 | image_tag }}
                                   </div>
                               {%- endcase -%}
-                              <span style='color: {{ block.settings.color }}'>{{ block.settings.text }}</span>
+                              <span class='[&_strong]:tw-text-[var(--usp-bold-color)]' style='--usp-bold-color: {{ block.settings.color_bold }}; color: {{ block.settings.color }}'>{{ block.settings.text }}</span>
                             </span>
                           </li>
                         </ul>

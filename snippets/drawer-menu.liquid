@@ -28,8 +28,9 @@
           {%- endif -%}
           {%- liquid 
             
-            assign site-nav__link = link.title | handleize | downcase
-            if site-nav__link contains 'sale'
+            assign link_url = link.url | handleize | downcase
+
+            if link_url contains 'sale'
               assign item_class = 'mobile-nav__link--sale'
             else 
               assign item_class = ''

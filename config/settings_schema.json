@@ -884,8 +884,17 @@
           {
             "value": "cart",
             "label": "t:settings_schema.cart.settings.cart_icon.options.cart.label"
+          },
+          {
+            "value": "custom",
+            "label": "Custom (upload image below)"
           }
         ]
+      },
+      {
+        "type": "image_picker",
+        "id": "cart__icon__custom",
+        "label": "Custom cart icon"
       },
       {
         "type": "checkbox",
