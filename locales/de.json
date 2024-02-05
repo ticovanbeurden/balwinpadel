@@ -128,7 +128,13 @@
       "increase_quantity": "Artikelmenge um eins erhöhen",
       "terms": "Ich stimme den Nutzungsbedingungen zu",
       "terms_html": "Ich stimme den <a href='{{ url }}' target='_blank'>Nutzungsbedingungen<\/a> zu",
-      "terms_confirm": "Sie müssen den Verkaufsbedingungen zustimmen, um auszuchecken"
+      "terms_confirm": "Sie müssen den Verkaufsbedingungen zustimmen, um auszuchecken",
+      "shipping": "Versenden",
+      "discount_total": "jetzt sparen",
+      "discount_note": "Im Vergleich zum empfohlenen Verkaufspreis",
+      "shipping_treshold": "Geben Sie {{ amount_to_go }} mehr aus und zahlen Sie keine Versandkosten",
+      "shipping_free": "Kostenloser Versand",
+      "total": "Gesamtmenge"
     },
     "label": {
       "price": "Preis",
@@ -322,7 +328,14 @@
       "will_be_in_stock_after": "Wird nach dem {{ date }} auf Lager sein",
       "waiting_for_stock": "Inventar auf dem Weg",
       "view_in_space": "In Ihrem Bereich ansehen",
-      "view_in_space_label": "„Ansicht in Ihrem Raum“ lädt den Artikel im Augmented-Reality-Fenster"
+      "view_in_space_label": "„Ansicht in Ihrem Raum“ lädt den Artikel im Augmented-Reality-Fenster",
+      "klaviyo_bis": {
+        "product_page_text": "Benachrichtigen Sie mich, wenn dieses Produkt verfügbar ist ",
+        "body_content": "Registrieren Sie sich, um eine Benachrichtigung zu erhalten, wenn dieses Produkt wieder auf Lager ist.",
+        "button_label": "Benachrichtige mich",
+        "subscription_success_label": "Erfolg! Wir informieren Sie, sobald dieses Produkt wieder verfügbar ist."
+      },
+      "bar_chart_title": "Padelcasa-Ergebnis"
     }
   },
   "store_availability": {

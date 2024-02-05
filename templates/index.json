@@ -22,30 +22,10 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
-        },
-        "95e02ebb-833e-49bd-bad8-cdc908aedb6d": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "MAAK JE OUTFIT AF",
-            "title_size": 60,
-            "subheading": "",
-            "link": "https:\/\/www.padelcasa.com\/collections\/padel-kettingen",
-            "link_text": "Kettingen",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#cc0000",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/banner_ai_is_geweldig.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
-        "428bd930-5351-4eb0-9105-8df381a64c6d",
-        "95e02ebb-833e-49bd-bad8-cdc908aedb6d"
+        "428bd930-5351-4eb0-9105-8df381a64c6d"
       ],
       "settings": {
         "section_height": "450px",

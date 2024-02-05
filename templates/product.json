@@ -38,8 +38,9 @@
             "icon_type": "custom",
             "icon": "truck",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "<strong>Vòòr 23:00 besteld, morgen thuis<\/strong>",
-            "color": "#000000"
+            "text": "Vòòr<strong> 23:00 besteld,<\/strong> morgen thuis",
+            "color": "#000000",
+            "color_bold": "#2f7543"
           }
         },
         "1f15a253-6e72-4c5f-b4f6-8342bccf3199": {
@@ -48,8 +49,9 @@
             "icon_type": "custom",
             "icon": "package",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "<strong>Vanaf €75 - gratis verzending<\/strong>",
-            "color": "#000000"
+            "text": "Vanaf €75 <strong>gratis verzending<\/strong>",
+            "color": "#000000",
+            "color_bold": "#2f7543"
           }
         },
         "88255b20-f1bb-4380-916a-5cf67b285057": {
@@ -58,8 +60,9 @@
             "icon_type": "custom",
             "icon": "heart",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "<strong>Binnen 14 dagen gratis retourneren<\/strong>",
-            "color": "#070b35"
+            "text": "<strong>Binnen 14 dagen <\/strong>gratis retourneren",
+            "color": "#070b35",
+            "color_bold": "#2f7543"
           }
         },
         "4e2b48a4-2bdb-4017-9bf2-c4cbdd46324d": {
@@ -68,8 +71,9 @@
             "icon_type": "custom",
             "icon": "heart",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "<strong>4.9\/5.0 klant beoordeling<\/strong>",
-            "color": "#070b35"
+            "text": "<strong>4.9\/5.0 <\/strong>klant beoordeling",
+            "color": "#000000",
+            "color_bold": "#2f7543"
           }
         },
         "inventory_status": {
