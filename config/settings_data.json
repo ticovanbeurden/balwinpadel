@@ -1,28 +1,28 @@
 {
   "current": {
     "color_body_bg": "#ffffff",
-    "color_body_text": "#070b35",
-    "color_price": "#070b35",
-    "color_savings_text": "#ff1616",
-    "color_borders": "#3879dd",
-    "color_button": "#2f7543",
+    "color_body_text": "#231f20",
+    "color_price": "#231f20",
+    "color_savings_text": "#ff1836",
+    "color_borders": "#ff1836",
+    "color_button": "#00973b",
     "color_button_text": "#ffffff",
-    "color_sale_tag": "#ff1616",
-    "color_cart_dot": "#3879dd",
+    "color_sale_tag": "#ff1836",
+    "color_cart_dot": "#ff1836",
     "color_small_image_bg": "#fff",
-    "color_large_image_bg": "#191d28",
+    "color_large_image_bg": "#231f20",
     "color_header": "#ffffff",
-    "color_header_text": "#070b35",
+    "color_header_text": "#231f20",
     "color_announcement": "#ffffff",
-    "color_announcement_text": "#2f7543",
+    "color_announcement_text": "#00973b",
     "color_footer": "#ffffff",
-    "color_footer_text": "#070b35",
+    "color_footer_text": "#231f20",
     "color_drawer_background": "#ffffff",
-    "color_drawer_text": "#070b35",
-    "color_drawer_border": "#3879dd",
-    "color_drawer_button": "#2f7543",
+    "color_drawer_text": "#231f20",
+    "color_drawer_border": "#ff1836",
+    "color_drawer_button": "#00973b",
     "color_drawer_button_text": "#ffffff",
-    "color_modal_overlays": "#131b31",
+    "color_modal_overlays": "#231f20",
     "color_image_text": "#ffffff",
     "color_image_overlay": "rgba(0,0,0,0)",
     "color_image_overlay_opacity": 10,
@@ -53,7 +53,7 @@
     "vendor_enable": false,
     "quick_shop_enable": true,
     "quick_shop_button": "quick_atc",
-    "quick_shop_text": "voeg toe aan winkelmandje",
+    "quick_shop_text": "Add to padel bag",
     "product_grid_image_size": "natural",
     "product_hover_image": true,
     "swatch_style": "round",
@@ -65,7 +65,8 @@
     "collection_grid_tint": "#000000",
     "collection_grid_opacity": 10,
     "collection_grid_gutter": true,
-    "cart_upsell_title": "PERFECT OM MEE TE NEMEN",
+    "cart_upsell_title": "PERFECT TO TAKE ALONG",
+    "cart_atc_text": "Add to padel bag",
     "cart_upsell": "padel-accessoires",
     "cart_type": "drawer",
     "cart_icon": "custom",
@@ -73,11 +74,12 @@
     "cart_additional_buttons": false,
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
-    "cart_free_shipping_threshold": 7500,
-    "social_facebook_link": "https:\/\/www.facebook.com\/padelcasa",
+    "cart_free_shipping_threshold": 75000,
+    "cart_shipping_price": 13000,
+    "social_facebook_link": "https:\/\/www.facebook.com\/balwinpadel",
     "social_twitter_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "https:\/\/instagram.com\/padel.casa",
+    "social_instagram_link": "https:\/\/instagram.com\/balwinpadel",
     "social_snapchat_link": "",
     "social_tumblr_link": "",
     "social_linkedin_link": "",
@@ -86,7 +88,7 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "favicon": "shopify:\/\/shop_images\/PADELCASA.COM_6.png",
+    "favicon": "shopify:\/\/shop_images\/Balwinpadel.co.za_1.png",
     "search_enable": true,
     "search_type": "product,article,page",
     "predictive_search_enabled": true,
@@ -138,34 +140,23 @@
           "1524770014057": {
             "type": "logo",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/logo_zijkant_auto_groot.png",
-              "logo-inverted": "shopify:\/\/shop_images\/padelcasa_logo_met_dikke_lijnen_3.png",
+              "logo": "shopify:\/\/shop_images\/ATTENTIVE_VERSATILE.png",
               "desktop_logo_width": 200,
               "mobile_logo_width": 110
             }
           },
-          "c3896eec-3549-45c1-a3e0-b478020934db": {
+          "announcement_k6rRWR": {
             "type": "announcement",
             "settings": {
-              "text": "voor 23:00 besteld - morgen thuis",
+              "text": "Ordered before 15:00, shipped out today",
               "link_text": "",
-              "link": "https:\/\/www.padelcasa.com\/collections\/padel-racket-sale"
-            }
-          },
-          "1524770292306": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "voor 23:00 besteld, morgen in huis!",
-              "link_text": "",
-              "link": "shopify:\/\/collections\/padel-rackets"
+              "link": ""
             }
           }
         },
         "block_order": [
           "1524770014057",
-          "c3896eec-3549-45c1-a3e0-b478020934db",
-          "1524770292306"
+          "announcement_k6rRWR"
         ],
         "settings": {
           "main_menu_link_list": "main-menu",
@@ -190,9 +181,17 @@
             "type": "newsletter",
             "settings": {
               "show_footer_title": true,
-              "title": "schrijf je in",
-              "text": "<p>Krijg informatie over de laatste nieuwtjes omtrent padel, en ontvang coupon-codes en aanbiedingen.<\/p>",
+              "title": "Sign up now",
+              "text": "<p>Get the most exclusive deals and benefit from insane offers. Only for our community! <\/p>",
               "container_width": 38
+            }
+          },
+          "menu_x9jziJ": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": false,
+              "menu": "footer-menu-2",
+              "container_width": 25
             }
           },
           "1494301487049": {
@@ -207,13 +206,14 @@
             "type": "menu",
             "settings": {
               "show_footer_title": false,
-              "menu": "meer-2",
+              "menu": "",
               "container_width": 25
             }
           }
         },
         "block_order": [
           "1494292487693",
+          "menu_x9jziJ",
           "1494301487049",
           "4ad3afce-76a7-487e-9ddc-5884804e3361"
         ],
@@ -317,7 +317,6 @@
           "popup_days": 10,
           "popup_title": "Schrijf je in en bespaar!",
           "popup_text": "<p>Schrijf je in voor de nieuwsbrief en ontvang speciale aanbiedingen, exclusieve content en meer<\/p>",
-          "popup_image": "shopify:\/\/shop_images\/padelcasa_facebook_logo_met_wit_achtergrond_fefc719e-77f7-48a2-b425-72e7b09365a4.jpg",
           "image_position": "left",
           "show_social_icons": false,
           "enable_newsletter": true,
@@ -581,23 +580,10 @@
         "settings": {
         }
       },
-      "6406956604159796213": {
-        "type": "shopify:\/\/apps\/smartseo\/blocks\/smartseo\/7b0a6064-ca2e-4392-9a1d-8c43c942357b",
+      "16278478101612877664": {
+        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {
-        }
-      },
-      "11724500921838622758": {
-        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "10605408327587305396": {
-        "type": "shopify:\/\/apps\/eg-auto-add-to-cart\/blocks\/app-embed\/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
-        "disabled": false,
-        "settings": {
-          "version": "v3"
         }
       }
     }

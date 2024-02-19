@@ -8,16 +8,6 @@
           "settings": {
           }
         },
-        "cffd8cbc-7721-4717-adde-17729f5fdd31": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-            "stars_fill_color": "#ffb400",
-            "star_size": 15,
-            "text_align": "flex-start",
-            "product": "{{product}}",
-            "stars_text_empty": ""
-          }
-        },
         "separator": {
           "type": "separator",
           "settings": {
@@ -38,7 +28,7 @@
             "icon_type": "custom",
             "icon": "truck",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "Vòòr<strong> 23:00 besteld,<\/strong> morgen thuis",
+            "text": "Ordered <strong>before 15:00<\/strong>, shipped out today.",
             "color": "#000000",
             "color_bold": "#2f7543"
           }
@@ -49,7 +39,7 @@
             "icon_type": "custom",
             "icon": "package",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "Vanaf €75 <strong>gratis verzending<\/strong>",
+            "text": "<strong>Free shipping<\/strong> on orders over R750",
             "color": "#000000",
             "color_bold": "#2f7543"
           }
@@ -60,7 +50,7 @@
             "icon_type": "custom",
             "icon": "heart",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "<strong>Binnen 14 dagen <\/strong>gratis retourneren",
+            "text": "Free returns <strong>within 14 days<\/strong>",
             "color": "#070b35",
             "color_bold": "#2f7543"
           }
@@ -71,7 +61,7 @@
             "icon_type": "custom",
             "icon": "heart",
             "custom_icon": "shopify:\/\/shop_images\/check.png",
-            "text": "<strong>4.9\/5.0 <\/strong>klant beoordeling",
+            "text": "<strong>4.9\/5.0 <\/strong>customer rating",
             "color": "#000000",
             "color_bold": "#2f7543"
           }
@@ -105,24 +95,24 @@
         "0558e72f-db02-4172-8390-9b5a641594b8": {
           "type": "specs",
           "settings": {
-            "title": "Specificaties",
-            "specs": "custom.kern_racket,\ncustom.afmetingen,\ncustom.balans,\ncustom.midden,\ncustom.bladformaat,\ncustom.druppel,\ncustom.materiaal_blad\ncustom.power_frame,\ncustom.soft_foam,\ncustom.model,\ncustom.gewicht,\ncustom.niveau,\ncustom.vorm"
+            "title": "Specifications",
+            "specs": "custom.level,\ncustom.shape,\ncustom.balance,\ncustom.brand\ncustom.weight,\ncustom.racket_core,\ncustom.dimensions,\ncustom.material_surface,\ncustom.model,"
           }
         },
         "tab": {
           "type": "tab",
           "settings": {
-            "title": "Hoe Padelcasa haar rackets beoordeelt:",
-            "content": "<p>PadelCasa heeft een racket test centrum in Amsterdam. De cijfers worden gebaseerd op de expertise en meningen van padel trainers, waaronder Sandy Farquharson van The Padel School.<\/p><p>WAT BETEKENEN DE VERSCHILLENDE CIJFERS?<\/p><p><br\/><strong>KRACHT:<\/strong><\/p><p>Hoe hoger dit cijfer is, hoe meer kracht het racket genereert.<\/p><p><strong>CONTROLE:<\/strong><\/p><p>Hoe hoger dit cijfer, des te meer controle je ervaart.<\/p><p><strong>HANDELBAARHEID:<\/strong><\/p><p>Hoe hoger dit cijfer des te makkelijker het is om het racket te handelen<\/p><p><strong>SWEETSPOT:<\/strong><\/p><p>Hoe hoger het cijfer is, hoe groter de sweetspot is. Dit betekent dat je de bal sneller goed raakt.<\/p>",
-            "page": ""
+            "title": "How Balwinpadel assesses its rackets:",
+            "content": "",
+            "page": "hoe-padelcasa-haar-rackets-beoordeeld"
           }
         },
         "15da42b6-2e10-409f-96b8-7fba3ccac472": {
           "type": "tab",
           "settings": {
-            "title": "Waarom PadelCasa?",
-            "content": "<p>- Padel Rackets testen mogelijk <br\/>- Winkel in Amsterdam<br\/>- Partnership met B. Amsterdam padel <br\/>- Meer dan 5 jaar ervaring<br\/>- Klant is 👑<\/p>",
-            "page": ""
+            "title": "Why Balwinpadel?",
+            "content": "",
+            "page": "product-tab-test"
           }
         },
         "share": {
@@ -130,16 +120,10 @@
           "disabled": true,
           "settings": {
           }
-        },
-        "24d6ba46-1b01-48a6-be98-db8821f91ca4": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "price",
-        "cffd8cbc-7721-4717-adde-17729f5fdd31",
         "separator",
         "variant_picker",
         "6373a12d-c3ba-493f-9427-7333c08d4d92",
@@ -153,8 +137,7 @@
         "0558e72f-db02-4172-8390-9b5a641594b8",
         "tab",
         "15da42b6-2e10-409f-96b8-7fba3ccac472",
-        "share",
-        "24d6ba46-1b01-48a6-be98-db8821f91ca4"
+        "share"
       ],
       "settings": {
         "sku_enable": false,
@@ -293,7 +276,7 @@
       "type": "product-recommendations",
       "settings": {
         "show_product_recommendations": true,
-        "product_recommendations_heading": "Speciaal voor jou",
+        "product_recommendations_heading": "Especially for you",
         "related_count": 5
       }
     },

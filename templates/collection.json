@@ -15,8 +15,8 @@
         "5719afd0-ada4-46b0-9e1d-9a8c2ebac5b8": {
           "type": "image",
           "settings": {
-            "image": "{{ collection.metafields.banner.image_desktop.value }}",
-            "image_desktop": "{{ collection.metafields.banner.image.value }}",
+            "image": "{{ collection.image }}",
+            "image_desktop": "{{ collection.metafields.banner.image_desktop.value }}",
             "link": "{{ collection.metafields.banner.link.value }}",
             "width": "50"
           }
@@ -61,8 +61,7 @@
           "disabled": true,
           "settings": {
             "start": "0.00",
-            "end": "150",
-            "image": "shopify:\/\/shop_images\/Untitled_design_30.jpg"
+            "end": "150"
           }
         },
         "8a7d508f-571c-494d-85df-3bffd3f49691": {
@@ -70,8 +69,7 @@
           "disabled": true,
           "settings": {
             "start": "150",
-            "end": "300",
-            "image": "shopify:\/\/shop_images\/Untitled_design_30.jpg"
+            "end": "300"
           }
         },
         "d04fbc6d-ad83-4da0-890f-fd59c49b2c6c": {
@@ -79,8 +77,7 @@
           "disabled": true,
           "settings": {
             "start": "300",
-            "end": "500",
-            "image": "shopify:\/\/shop_images\/Untitled_design_30.jpg"
+            "end": "500"
           }
         }
       },

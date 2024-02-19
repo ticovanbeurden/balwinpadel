@@ -3,29 +3,70 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "428bd930-5351-4eb0-9105-8df381a64c6d": {
+        "image_kXPGe3": {
           "type": "image",
           "settings": {
+            "top_subheading": "Balwinpadel",
+            "title": "The padel expert",
+            "title_size": 75,
+            "subheading": "Your best padel parner",
+            "link": "https:\/\/balwinpadel.co.za\/collections\/padel-racket-sale",
+            "link_text": "Racket selector",
+            "link_2": "https:\/\/balwinpadel.co.za\/collections\/padel-rackets",
+            "link_text_2": "Shop now",
+            "color_accent": "#00973b",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/RDF5316.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 50,
+            "focal_point": "center center"
+          }
+        },
+        "428bd930-5351-4eb0-9105-8df381a64c6d": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
             "top_subheading": "",
-            "title": "DE JUISTE KEUZE VOOR PADEL",
+            "title": "The padel expert",
             "title_size": 60,
-            "subheading": "",
+            "subheading": "your best padel partner",
             "link": "https:\/\/www.padelcasa.com\/collections\/padel-racket-sale",
-            "link_text": "DEALS",
+            "link_text": "Sale",
             "link_2": "shopify:\/\/collections\/padel-rackets",
-            "link_text_2": "ALLE RACKETS",
+            "link_text_2": "All Rackets",
             "color_accent": "#2f7543",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/brian-patrick-tagalog-qNEv1SVkOnk-unsplash_copy_2.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/brian-patrick-tagalog-qNEv1SVkOnk-unsplash_copy_2_ccdf7af8-6583-4ce3-be62-04e7e293bd2b.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_cTh968": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "The padel expert",
+            "title_size": 80,
+            "subheading": "Your best padel partner",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/RDF5303.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 50,
             "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "428bd930-5351-4eb0-9105-8df381a64c6d"
+        "image_kXPGe3",
+        "428bd930-5351-4eb0-9105-8df381a64c6d",
+        "image_cTh968"
       ],
       "settings": {
         "section_height": "450px",
@@ -79,7 +120,7 @@
         "template--17815871652120__4a380ac9-6ddf-4a25-9442-818efb06cb1e-16758619446b30c502-3"
       ],
       "settings": {
-        "title": "Categorieën",
+        "title": "Categories",
         "divider": false,
         "per_row": 4,
         "enable_gutter": true
@@ -87,16 +128,15 @@
     },
     "8ecdbd4f-af66-43ec-8a3d-f40af89f9aaf": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Racket_testen_PC.jpg",
-        "image2": "shopify:\/\/shop_images\/Over_ons-7.jpg",
+        "image": "shopify:\/\/shop_images\/Untitled_design_93.png",
+        "image2": "shopify:\/\/shop_images\/Untitled_design_94.png",
         "image_width": 700,
-        "subtitle": "padel racket testen",
-        "title": "kom jij een racket testen?",
-        "text": "<p>Wil jij een racket kopen maar toch eerst even voelen welk racket het beste bij jou past? Bij ons kan je <strong>vrijblijvend een racket testen<\/strong> op locatie, maak nu een afspraak!<\/p>",
-        "button_label": "maak een afspraak",
-        "button_link": "https:\/\/www.padelcasa.com\/pages\/padel-racket-testen-amsterdam",
+        "subtitle": "Balwinpadel",
+        "title": "Join our community 💚",
+        "text": "<p>Joining our community is a great way to stay up to date with the latest news, promotions, and events. Connect with like-minded individuals who share your passion for pade<\/p>",
+        "button_label": "Follow us on instagram",
+        "button_link": "https:\/\/www.instagram.com\/balwinpadel\/",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
@@ -237,12 +277,12 @@
     "1b4ff4f3-bf0d-49fd-930d-cb1702a5468e": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ADIDAS_collectie.jpg",
+        "image": "shopify:\/\/shop_images\/ADIDAS_collectie_1.png",
         "image_width": 700,
-        "subtitle": "Nieuw",
-        "title": "Adidas RACKETS & TASSEN",
-        "text": "<p>De collectie van Adidas is gevarieerd en breed. Voor elk soort speler is er iets wat perfect aansluit op je spel. Of je nu op zoek bent naar power, comfort, controle of een balans tussen allen.<\/p>",
-        "button_label": "bekijk de collectie",
+        "subtitle": "new",
+        "title": "Adidas RACKETS & BAGS",
+        "text": "<p>The Adidas collection is diverse and extensive. There is something that perfectly suits your game for every type of player. Whether you are looking for power, comfort, control, or a balance between all of them.<\/p>",
+        "button_label": "View the collection",
         "button_link": "https:\/\/www.padelcasa.com\/collections\/adidas-padel-racket-kopen",
         "button_style": "primary",
         "align_text": "left",
@@ -253,12 +293,12 @@
     "0219e51a-bc74-4113-bc8a-811a6d174d01": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/BABOLAT_collectie.jpg",
+        "image": "shopify:\/\/shop_images\/BABOLAT_collectie.png",
         "image_width": 700,
-        "subtitle": "Nieuw",
+        "subtitle": "new",
         "title": "Babolat",
-        "text": "<p>Hoogwaardige rackets is het standaard van de nieuwe collectie van Babolat. De rackets van Babolat gaan soms wel 2 keer langer mee in vergelijking met andere merken.<\/p>",
-        "button_label": "bekijk de collectie",
+        "text": "<p>High-quality rackets are the standard in Babolat's new collection. Babolat rackets sometimes last up to twice as long compared to other brands.<\/p>",
+        "button_label": "View the collection",
         "button_link": "https:\/\/www.padelcasa.com\/collections\/babolat",
         "button_style": "primary",
         "align_text": "left",
@@ -269,12 +309,12 @@
     "ea1447e4-f7c5-436e-9dfd-0577975f15c0": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/HEAD_collectie.jpg",
+        "image": "shopify:\/\/shop_images\/HEAD_collectie.png",
         "image_width": 700,
-        "subtitle": "Nieuw",
+        "subtitle": "New",
         "title": "HEAD",
-        "text": "<p>HEAD is en blijft innovatief in padel. Zo is de nieuwe lijn van HEAD van extreem hoge kwaliteit met uiteraard een prachtig design.<\/p>",
-        "button_label": "Bekijk de collectie",
+        "text": "<p>HEAD continues to be innovative in padel. The new line of HEAD products is of extremely high quality and, of course, features a beautiful design.<\/p>",
+        "button_label": "View the collection",
         "button_link": "shopify:\/\/collections\/head-padel-racket-kopen",
         "button_style": "primary",
         "align_text": "left",
@@ -372,6 +412,7 @@
       "block_order": [
         "template--18163752141080__45cd72dd-940c-429a-977e-b95eea671bae-1678969435576b7868-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
