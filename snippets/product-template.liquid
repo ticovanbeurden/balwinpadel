@@ -405,7 +405,7 @@
                   {%- when 'score_description' -%}
                     {%- liquid 
                       assign scale = '0,25,50,75,100' | split: ','
-                      assign scores = 'kracht,controle,handelbaarheid,sweetspot,totaalscore' | split: ','
+                      assign scores = scores_metafields | split: ','
                       assign scoresAmount = 0
                       for s in scores  
                         assign metafield = product.metafields.custom[s]
@@ -425,6 +425,9 @@
                               assign metafield = product.metafields.custom[s]
                               assign score = metafield.value 
                               assign progress = score | remove: '.'
+                              unless score
+                                continue
+                              endunless
                             -%}
                             <span class='tw-flex tw-items-center tw-justify-end tw-h-6 tw-mb-2 tw-pr-2 tw-text-xs tw-whitespace-nowrap'>
                               {{- s -}}
@@ -437,6 +440,9 @@
                               assign metafield = product.metafields.custom[s]
                               assign score = metafield.value 
                               assign progress = score | remove: '.'
+                              unless score
+                                continue
+                              endunless
                             -%}
                             <div style='background-color: #f0f0f0; width: {{ progress }}%' class="tw-h-6 tw-mb-2 tw-w-full tw-text-black tw-text-xs tw-flex tw-items-center tw-justify-center tw-mt-auto">
                               {{- score | capitalize -}}
