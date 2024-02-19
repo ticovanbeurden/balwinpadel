@@ -9,7 +9,7 @@
   product: product,
   section_id: section.id,
   blocks: section.blocks,
-
+  scores_metafields: section.settings.scores_metafields,
   image_position: section.settings.image_position,
   image_container_width: section.settings.image_size,
   product_zoom_enable: section.settings.product_zoom_enable,
@@ -158,6 +158,17 @@
         }
       ],
       "info": "t:sections.main-product.settings.product_video_style.info"
+    },
+    {
+      "type": "header",
+      "content": "Scores"
+    },
+    {
+      "type": "text",
+      "id": "scores_metafields",
+      "label": "Scores metafield values",
+      "default": "power,control,manageability,sweetspot1,total_score",
+      "info": "Please add values seperated through a comma. The order of the values will be used to display the scores."
     }
   ],
   "blocks": [{

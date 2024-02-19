@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "adastra dev -s padelcasawebshop.myshopify.com",
+    "dev": "adastra dev -s ccca03-2.myshopify.com",
     "build": "adastra build",
     "preview": "adastra preview",
     "check": "adastra check"
